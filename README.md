@@ -17,9 +17,9 @@ Python 2.7 and 3.4+
 If the python package is hosted on a repository, you can install directly using:
 
 ```sh
-pip install git+https://github.com/n3x77/dfirtrack-api-python-client.git
+pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/n3x77/dfirtrack-api-python-client.git`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git`)
 
 Then import the package:
 ```python
@@ -58,6 +58,16 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 
 # Enter a context with an instance of the API client
@@ -246,6 +256,6 @@ Class | Method | HTTP request | Description
 
 ## Author
 
-Sven Pueschel <spueschel89@gmail.com>
+
 
 

@@ -137,6 +137,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -149,9 +150,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     artifact = dfirtrackapi_client.Artifact() # Artifact |  (optional)
@@ -175,7 +186,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -198,6 +209,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -210,9 +222,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     artifacttype = dfirtrackapi_client.Artifacttype() # Artifacttype |  (optional)
@@ -236,7 +258,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -259,6 +281,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -271,9 +294,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     case = dfirtrackapi_client.Case() # Case |  (optional)
@@ -297,7 +330,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -320,6 +353,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -332,9 +366,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     company = dfirtrackapi_client.Company() # Company |  (optional)
@@ -358,7 +402,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -381,6 +425,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -393,9 +438,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     contact = dfirtrackapi_client.Contact() # Contact |  (optional)
@@ -419,7 +474,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -442,6 +497,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -454,9 +510,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     division = dfirtrackapi_client.Division() # Division |  (optional)
@@ -480,7 +546,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -503,6 +569,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -515,9 +582,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     dnsname = dfirtrackapi_client.Dnsname() # Dnsname |  (optional)
@@ -541,7 +618,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -564,6 +641,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -576,9 +654,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     domain = dfirtrackapi_client.Domain() # Domain |  (optional)
@@ -602,7 +690,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -625,6 +713,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -637,9 +726,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     domainuser = dfirtrackapi_client.Domainuser() # Domainuser |  (optional)
@@ -663,7 +762,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -686,6 +785,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -698,9 +798,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     ip = dfirtrackapi_client.Ip() # Ip |  (optional)
@@ -724,7 +834,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -747,6 +857,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -759,9 +870,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     location = dfirtrackapi_client.Location() # Location |  (optional)
@@ -785,7 +906,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -808,6 +929,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -820,9 +942,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     os = dfirtrackapi_client.Os() # Os |  (optional)
@@ -846,7 +978,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -869,6 +1001,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -881,9 +1014,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     osarch = dfirtrackapi_client.Osarch() # Osarch |  (optional)
@@ -907,7 +1050,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -930,6 +1073,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -942,9 +1086,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     reason = dfirtrackapi_client.Reason() # Reason |  (optional)
@@ -968,7 +1122,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -991,6 +1145,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1003,9 +1158,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     recommendation = dfirtrackapi_client.Recommendation() # Recommendation |  (optional)
@@ -1029,7 +1194,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1052,6 +1217,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1064,9 +1230,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     serviceprovider = dfirtrackapi_client.Serviceprovider() # Serviceprovider |  (optional)
@@ -1090,7 +1266,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1113,6 +1289,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1125,9 +1302,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     system = dfirtrackapi_client.System() # System |  (optional)
@@ -1151,7 +1338,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1174,6 +1361,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1186,9 +1374,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     systemtype = dfirtrackapi_client.Systemtype() # Systemtype |  (optional)
@@ -1212,7 +1410,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1235,6 +1433,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1247,9 +1446,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     systemuser = dfirtrackapi_client.Systemuser() # Systemuser |  (optional)
@@ -1273,7 +1482,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1296,6 +1505,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1308,9 +1518,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     tag = dfirtrackapi_client.Tag() # Tag |  (optional)
@@ -1334,7 +1554,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1357,6 +1577,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1369,9 +1590,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     task = dfirtrackapi_client.Task() # Task |  (optional)
@@ -1395,7 +1626,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1418,6 +1649,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1430,9 +1662,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     taskname = dfirtrackapi_client.Taskname() # Taskname |  (optional)
@@ -1456,7 +1698,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1479,6 +1721,7 @@ all objects, allowed: GET
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1491,9 +1734,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -1513,7 +1766,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1536,6 +1789,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1548,9 +1802,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -1570,7 +1834,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1593,6 +1857,7 @@ all objects, allowed: GET
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1605,9 +1870,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -1627,7 +1902,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1650,6 +1925,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1662,9 +1938,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -1684,7 +1970,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1707,6 +1993,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1719,9 +2006,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -1741,7 +2038,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1764,6 +2061,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1776,9 +2074,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -1798,7 +2106,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1821,6 +2129,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1833,9 +2142,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -1855,7 +2174,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1878,6 +2197,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1890,9 +2210,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -1912,7 +2242,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1935,6 +2265,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -1947,9 +2278,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -1969,7 +2310,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -1992,6 +2333,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2004,9 +2346,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2026,7 +2378,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2049,6 +2401,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2061,9 +2414,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2083,7 +2446,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2106,6 +2469,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2118,9 +2482,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2140,7 +2514,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2163,6 +2537,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2175,9 +2550,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2197,7 +2582,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2220,6 +2605,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2232,9 +2618,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2254,7 +2650,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2277,6 +2673,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2289,9 +2686,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2311,7 +2718,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2334,6 +2741,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2346,9 +2754,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2368,7 +2786,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2391,6 +2809,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2403,9 +2822,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2425,7 +2854,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2448,6 +2877,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2460,9 +2890,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2482,7 +2922,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2505,6 +2945,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2517,9 +2958,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2539,7 +2990,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2562,6 +3013,7 @@ all objects, allowed: GET
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2574,9 +3026,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2596,7 +3058,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2619,6 +3081,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2631,9 +3094,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2653,7 +3126,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2676,6 +3149,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2688,9 +3162,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2710,7 +3194,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2733,6 +3217,7 @@ all objects, allowed: GET
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2745,9 +3230,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2767,7 +3262,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2790,6 +3285,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2802,9 +3298,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2824,7 +3330,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2847,6 +3353,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2859,9 +3366,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2881,7 +3398,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2904,6 +3421,7 @@ all objects, allowed: GET
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2916,9 +3434,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2938,7 +3466,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -2961,6 +3489,7 @@ all objects, allowed: GET + POST
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -2973,9 +3502,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -2995,7 +3534,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3018,6 +3557,7 @@ all objects, allowed: GET
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3030,9 +3570,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     
@@ -3052,7 +3602,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3075,6 +3625,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3087,9 +3638,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     artifact_id = 'artifact_id_example' # str | A unique integer value identifying this artifact.
@@ -3115,7 +3676,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3138,6 +3699,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3150,9 +3712,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     artifacttype_id = 'artifacttype_id_example' # str | A unique integer value identifying this artifacttype.
@@ -3178,7 +3750,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3201,6 +3773,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3213,9 +3786,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     case_id = 'case_id_example' # str | A unique integer value identifying this case.
@@ -3241,7 +3824,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3264,6 +3847,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3276,9 +3860,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     company_id = 'company_id_example' # str | A unique integer value identifying this company.
@@ -3304,7 +3898,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3327,6 +3921,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3339,9 +3934,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     contact_id = 'contact_id_example' # str | A unique integer value identifying this contact.
@@ -3367,7 +3972,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3390,6 +3995,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3402,9 +4008,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     division_id = 'division_id_example' # str | A unique integer value identifying this division.
@@ -3430,7 +4046,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3453,6 +4069,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3465,9 +4082,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     dnsname_id = 'dnsname_id_example' # str | A unique integer value identifying this dnsname.
@@ -3493,7 +4120,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3516,6 +4143,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3528,9 +4156,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     domain_id = 'domain_id_example' # str | A unique integer value identifying this domain.
@@ -3556,7 +4194,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3579,6 +4217,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3591,9 +4230,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     domainuser_id = 'domainuser_id_example' # str | A unique integer value identifying this domainuser.
@@ -3619,7 +4268,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3642,6 +4291,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3654,9 +4304,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     ip_id = 'ip_id_example' # str | A unique integer value identifying this ip.
@@ -3682,7 +4342,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3705,6 +4365,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3717,9 +4378,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     location_id = 'location_id_example' # str | A unique integer value identifying this location.
@@ -3745,7 +4416,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3768,6 +4439,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3780,9 +4452,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     os_id = 'os_id_example' # str | A unique integer value identifying this os.
@@ -3808,7 +4490,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3831,6 +4513,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3843,9 +4526,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     osarch_id = 'osarch_id_example' # str | A unique integer value identifying this osarch.
@@ -3871,7 +4564,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3894,6 +4587,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3906,9 +4600,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     reason_id = 'reason_id_example' # str | A unique integer value identifying this reason.
@@ -3934,7 +4638,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -3957,6 +4661,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -3969,9 +4674,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     recommendation_id = 'recommendation_id_example' # str | A unique integer value identifying this recommendation.
@@ -3997,7 +4712,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4020,6 +4735,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4032,9 +4748,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     serviceprovider_id = 'serviceprovider_id_example' # str | A unique integer value identifying this serviceprovider.
@@ -4060,7 +4786,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4083,6 +4809,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4095,9 +4822,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     system_id = 'system_id_example' # str | A unique integer value identifying this system.
@@ -4123,7 +4860,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4146,6 +4883,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4158,9 +4896,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     systemtype_id = 'systemtype_id_example' # str | A unique integer value identifying this systemtype.
@@ -4186,7 +4934,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4209,6 +4957,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4221,9 +4970,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     systemuser_id = 'systemuser_id_example' # str | A unique integer value identifying this systemuser.
@@ -4249,7 +5008,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4272,6 +5031,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4284,9 +5044,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     tag_id = 'tag_id_example' # str | A unique integer value identifying this tag.
@@ -4312,7 +5082,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4335,6 +5105,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4347,9 +5118,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     task_id = 'task_id_example' # str | A unique integer value identifying this task.
@@ -4375,7 +5156,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4398,6 +5179,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4410,9 +5192,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     taskname_id = 'taskname_id_example' # str | A unique integer value identifying this taskname.
@@ -4438,7 +5230,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4461,6 +5253,7 @@ single object, allowed: GET
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4473,9 +5266,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     analysisstatus_id = 'analysisstatus_id_example' # str | A unique integer value identifying this analysisstatus.
@@ -4499,7 +5302,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4522,6 +5325,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4534,9 +5338,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     artifact_id = 'artifact_id_example' # str | A unique integer value identifying this artifact.
@@ -4560,7 +5374,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4583,6 +5397,7 @@ single object, allowed: GET
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4595,9 +5410,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     artifactstatus_id = 'artifactstatus_id_example' # str | A unique integer value identifying this artifactstatus.
@@ -4621,7 +5446,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4644,6 +5469,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4656,9 +5482,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     artifacttype_id = 'artifacttype_id_example' # str | A unique integer value identifying this artifacttype.
@@ -4682,7 +5518,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4705,6 +5541,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4717,9 +5554,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     case_id = 'case_id_example' # str | A unique integer value identifying this case.
@@ -4743,7 +5590,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4766,6 +5613,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4778,9 +5626,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     company_id = 'company_id_example' # str | A unique integer value identifying this company.
@@ -4804,7 +5662,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4827,6 +5685,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4839,9 +5698,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     contact_id = 'contact_id_example' # str | A unique integer value identifying this contact.
@@ -4865,7 +5734,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4888,6 +5757,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4900,9 +5770,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     division_id = 'division_id_example' # str | A unique integer value identifying this division.
@@ -4926,7 +5806,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -4949,6 +5829,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -4961,9 +5842,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     dnsname_id = 'dnsname_id_example' # str | A unique integer value identifying this dnsname.
@@ -4987,7 +5878,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5010,6 +5901,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5022,9 +5914,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     domain_id = 'domain_id_example' # str | A unique integer value identifying this domain.
@@ -5048,7 +5950,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5071,6 +5973,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5083,9 +5986,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     domainuser_id = 'domainuser_id_example' # str | A unique integer value identifying this domainuser.
@@ -5109,7 +6022,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5132,6 +6045,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5144,9 +6058,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     ip_id = 'ip_id_example' # str | A unique integer value identifying this ip.
@@ -5170,7 +6094,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5193,6 +6117,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5205,9 +6130,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     location_id = 'location_id_example' # str | A unique integer value identifying this location.
@@ -5231,7 +6166,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5254,6 +6189,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5266,9 +6202,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     os_id = 'os_id_example' # str | A unique integer value identifying this os.
@@ -5292,7 +6238,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5315,6 +6261,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5327,9 +6274,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     osarch_id = 'osarch_id_example' # str | A unique integer value identifying this osarch.
@@ -5353,7 +6310,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5376,6 +6333,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5388,9 +6346,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     reason_id = 'reason_id_example' # str | A unique integer value identifying this reason.
@@ -5414,7 +6382,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5437,6 +6405,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5449,9 +6418,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     recommendation_id = 'recommendation_id_example' # str | A unique integer value identifying this recommendation.
@@ -5475,7 +6454,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5498,6 +6477,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5510,9 +6490,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     serviceprovider_id = 'serviceprovider_id_example' # str | A unique integer value identifying this serviceprovider.
@@ -5536,7 +6526,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5559,6 +6549,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5571,9 +6562,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     system_id = 'system_id_example' # str | A unique integer value identifying this system.
@@ -5597,7 +6598,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5620,6 +6621,7 @@ single object, allowed: GET
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5632,9 +6634,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     systemstatus_id = 'systemstatus_id_example' # str | A unique integer value identifying this systemstatus.
@@ -5658,7 +6670,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5681,6 +6693,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5693,9 +6706,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     systemtype_id = 'systemtype_id_example' # str | A unique integer value identifying this systemtype.
@@ -5719,7 +6742,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5742,6 +6765,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5754,9 +6778,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     systemuser_id = 'systemuser_id_example' # str | A unique integer value identifying this systemuser.
@@ -5780,7 +6814,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5803,6 +6837,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5815,9 +6850,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     tag_id = 'tag_id_example' # str | A unique integer value identifying this tag.
@@ -5841,7 +6886,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5864,6 +6909,7 @@ single object, allowed: GET
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5876,9 +6922,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     tagcolor_id = 'tagcolor_id_example' # str | A unique integer value identifying this tagcolor.
@@ -5902,7 +6958,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5925,6 +6981,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5937,9 +6994,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     task_id = 'task_id_example' # str | A unique integer value identifying this task.
@@ -5963,7 +7030,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -5986,6 +7053,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -5998,9 +7066,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     taskname_id = 'taskname_id_example' # str | A unique integer value identifying this taskname.
@@ -6024,7 +7102,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6047,6 +7125,7 @@ single object, allowed: GET
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6059,9 +7138,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     taskpriority_id = 'taskpriority_id_example' # str | A unique integer value identifying this taskpriority.
@@ -6085,7 +7174,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6108,6 +7197,7 @@ single object, allowed: GET
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6120,9 +7210,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     taskstatus_id = 'taskstatus_id_example' # str | A unique integer value identifying this taskstatus.
@@ -6146,7 +7246,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6169,6 +7269,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6181,9 +7282,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     artifact_id = 'artifact_id_example' # str | A unique integer value identifying this artifact.
@@ -6209,7 +7320,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6232,6 +7343,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6244,9 +7356,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     artifacttype_id = 'artifacttype_id_example' # str | A unique integer value identifying this artifacttype.
@@ -6272,7 +7394,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6295,6 +7417,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6307,9 +7430,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     case_id = 'case_id_example' # str | A unique integer value identifying this case.
@@ -6335,7 +7468,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6358,6 +7491,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6370,9 +7504,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     company_id = 'company_id_example' # str | A unique integer value identifying this company.
@@ -6398,7 +7542,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6421,6 +7565,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6433,9 +7578,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     contact_id = 'contact_id_example' # str | A unique integer value identifying this contact.
@@ -6461,7 +7616,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6484,6 +7639,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6496,9 +7652,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     division_id = 'division_id_example' # str | A unique integer value identifying this division.
@@ -6524,7 +7690,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6547,6 +7713,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6559,9 +7726,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     dnsname_id = 'dnsname_id_example' # str | A unique integer value identifying this dnsname.
@@ -6587,7 +7764,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6610,6 +7787,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6622,9 +7800,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     domain_id = 'domain_id_example' # str | A unique integer value identifying this domain.
@@ -6650,7 +7838,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6673,6 +7861,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6685,9 +7874,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     domainuser_id = 'domainuser_id_example' # str | A unique integer value identifying this domainuser.
@@ -6713,7 +7912,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6736,6 +7935,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6748,9 +7948,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     ip_id = 'ip_id_example' # str | A unique integer value identifying this ip.
@@ -6776,7 +7986,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6799,6 +8009,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6811,9 +8022,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     location_id = 'location_id_example' # str | A unique integer value identifying this location.
@@ -6839,7 +8060,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6862,6 +8083,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6874,9 +8096,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     os_id = 'os_id_example' # str | A unique integer value identifying this os.
@@ -6902,7 +8134,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6925,6 +8157,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -6937,9 +8170,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     osarch_id = 'osarch_id_example' # str | A unique integer value identifying this osarch.
@@ -6965,7 +8208,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -6988,6 +8231,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -7000,9 +8244,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     reason_id = 'reason_id_example' # str | A unique integer value identifying this reason.
@@ -7028,7 +8282,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -7051,6 +8305,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -7063,9 +8318,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     recommendation_id = 'recommendation_id_example' # str | A unique integer value identifying this recommendation.
@@ -7091,7 +8356,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -7114,6 +8379,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -7126,9 +8392,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     serviceprovider_id = 'serviceprovider_id_example' # str | A unique integer value identifying this serviceprovider.
@@ -7154,7 +8430,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -7177,6 +8453,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -7189,9 +8466,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     system_id = 'system_id_example' # str | A unique integer value identifying this system.
@@ -7217,7 +8504,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -7240,6 +8527,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -7252,9 +8540,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     systemtype_id = 'systemtype_id_example' # str | A unique integer value identifying this systemtype.
@@ -7280,7 +8578,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -7303,6 +8601,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -7315,9 +8614,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     systemuser_id = 'systemuser_id_example' # str | A unique integer value identifying this systemuser.
@@ -7343,7 +8652,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -7366,6 +8675,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -7378,9 +8688,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     tag_id = 'tag_id_example' # str | A unique integer value identifying this tag.
@@ -7406,7 +8726,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -7429,6 +8749,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -7441,9 +8762,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     task_id = 'task_id_example' # str | A unique integer value identifying this task.
@@ -7469,7 +8800,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 
@@ -7492,6 +8823,7 @@ single object, allowed: GET + PUT
 
 ### Example
 
+* Basic Authentication (BasicAuth):
 ```python
 from __future__ import print_function
 import time
@@ -7504,9 +8836,19 @@ configuration = dfirtrackapi_client.Configuration(
     host = "http://localhost"
 )
 
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: BasicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
 
 # Enter a context with an instance of the API client
-with dfirtrackapi_client.ApiClient() as api_client:
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = dfirtrackapi_client.ApiApi(api_client)
     taskname_id = 'taskname_id_example' # str | A unique integer value identifying this taskname.
@@ -7532,7 +8874,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[BasicAuth](../README.md#BasicAuth)
 
 ### HTTP request headers
 

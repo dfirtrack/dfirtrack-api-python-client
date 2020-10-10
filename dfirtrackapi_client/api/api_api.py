@@ -132,7 +132,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/artifact/', 'POST',
@@ -246,7 +246,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/artifacttype/', 'POST',
@@ -360,7 +360,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/case/', 'POST',
@@ -474,7 +474,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/company/', 'POST',
@@ -588,7 +588,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/contact/', 'POST',
@@ -702,7 +702,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/division/', 'POST',
@@ -816,7 +816,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/dnsname/', 'POST',
@@ -930,7 +930,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/domain/', 'POST',
@@ -1044,7 +1044,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/domainuser/', 'POST',
@@ -1158,7 +1158,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/ip/', 'POST',
@@ -1272,7 +1272,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/location/', 'POST',
@@ -1386,7 +1386,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/os/', 'POST',
@@ -1500,7 +1500,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/osarch/', 'POST',
@@ -1614,7 +1614,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/reason/', 'POST',
@@ -1728,7 +1728,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/recommendation/', 'POST',
@@ -1842,7 +1842,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/serviceprovider/', 'POST',
@@ -1956,7 +1956,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/system/', 'POST',
@@ -2070,7 +2070,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/systemtype/', 'POST',
@@ -2184,7 +2184,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/systemuser/', 'POST',
@@ -2298,7 +2298,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/tag/', 'POST',
@@ -2412,7 +2412,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/task/', 'POST',
@@ -2526,7 +2526,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/taskname/', 'POST',
@@ -2631,7 +2631,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/analysisstatus/', 'GET',
@@ -2736,7 +2736,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/artifact/', 'GET',
@@ -2841,7 +2841,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/artifactstatus/', 'GET',
@@ -2946,7 +2946,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/artifacttype/', 'GET',
@@ -3051,7 +3051,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/case/', 'GET',
@@ -3156,7 +3156,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/company/', 'GET',
@@ -3261,7 +3261,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/contact/', 'GET',
@@ -3366,7 +3366,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/division/', 'GET',
@@ -3471,7 +3471,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/dnsname/', 'GET',
@@ -3576,7 +3576,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/domain/', 'GET',
@@ -3681,7 +3681,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/domainuser/', 'GET',
@@ -3786,7 +3786,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/ip/', 'GET',
@@ -3891,7 +3891,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/location/', 'GET',
@@ -3996,7 +3996,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/os/', 'GET',
@@ -4101,7 +4101,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/osarch/', 'GET',
@@ -4206,7 +4206,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/reason/', 'GET',
@@ -4311,7 +4311,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/recommendation/', 'GET',
@@ -4416,7 +4416,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/serviceprovider/', 'GET',
@@ -4521,7 +4521,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/system/', 'GET',
@@ -4626,7 +4626,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/systemstatus/', 'GET',
@@ -4731,7 +4731,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/systemtype/', 'GET',
@@ -4836,7 +4836,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/systemuser/', 'GET',
@@ -4941,7 +4941,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/tagcolor/', 'GET',
@@ -5046,7 +5046,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/tag/', 'GET',
@@ -5151,7 +5151,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/taskname/', 'GET',
@@ -5256,7 +5256,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/taskpriority/', 'GET',
@@ -5361,7 +5361,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/task/', 'GET',
@@ -5466,7 +5466,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/taskstatus/', 'GET',
@@ -5589,7 +5589,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/artifact/{artifact_id}/', 'PATCH',
@@ -5712,7 +5712,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/artifacttype/{artifacttype_id}/', 'PATCH',
@@ -5835,7 +5835,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/case/{case_id}/', 'PATCH',
@@ -5958,7 +5958,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/company/{company_id}/', 'PATCH',
@@ -6081,7 +6081,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/contact/{contact_id}/', 'PATCH',
@@ -6204,7 +6204,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/division/{division_id}/', 'PATCH',
@@ -6327,7 +6327,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/dnsname/{dnsname_id}/', 'PATCH',
@@ -6450,7 +6450,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/domain/{domain_id}/', 'PATCH',
@@ -6573,7 +6573,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/domainuser/{domainuser_id}/', 'PATCH',
@@ -6696,7 +6696,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/ip/{ip_id}/', 'PATCH',
@@ -6819,7 +6819,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/location/{location_id}/', 'PATCH',
@@ -6942,7 +6942,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/os/{os_id}/', 'PATCH',
@@ -7065,7 +7065,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/osarch/{osarch_id}/', 'PATCH',
@@ -7188,7 +7188,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/reason/{reason_id}/', 'PATCH',
@@ -7311,7 +7311,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/recommendation/{recommendation_id}/', 'PATCH',
@@ -7434,7 +7434,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/serviceprovider/{serviceprovider_id}/', 'PATCH',
@@ -7557,7 +7557,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/system/{system_id}/', 'PATCH',
@@ -7680,7 +7680,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/systemtype/{systemtype_id}/', 'PATCH',
@@ -7803,7 +7803,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/systemuser/{systemuser_id}/', 'PATCH',
@@ -7926,7 +7926,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/tag/{tag_id}/', 'PATCH',
@@ -8049,7 +8049,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/task/{task_id}/', 'PATCH',
@@ -8172,7 +8172,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/taskname/{taskname_id}/', 'PATCH',
@@ -8286,7 +8286,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/analysisstatus/{analysisstatus_id}/', 'GET',
@@ -8400,7 +8400,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/artifact/{artifact_id}/', 'GET',
@@ -8514,7 +8514,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/artifactstatus/{artifactstatus_id}/', 'GET',
@@ -8628,7 +8628,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/artifacttype/{artifacttype_id}/', 'GET',
@@ -8742,7 +8742,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/case/{case_id}/', 'GET',
@@ -8856,7 +8856,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/company/{company_id}/', 'GET',
@@ -8970,7 +8970,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/contact/{contact_id}/', 'GET',
@@ -9084,7 +9084,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/division/{division_id}/', 'GET',
@@ -9198,7 +9198,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/dnsname/{dnsname_id}/', 'GET',
@@ -9312,7 +9312,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/domain/{domain_id}/', 'GET',
@@ -9426,7 +9426,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/domainuser/{domainuser_id}/', 'GET',
@@ -9540,7 +9540,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/ip/{ip_id}/', 'GET',
@@ -9654,7 +9654,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/location/{location_id}/', 'GET',
@@ -9768,7 +9768,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/os/{os_id}/', 'GET',
@@ -9882,7 +9882,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/osarch/{osarch_id}/', 'GET',
@@ -9996,7 +9996,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/reason/{reason_id}/', 'GET',
@@ -10110,7 +10110,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/recommendation/{recommendation_id}/', 'GET',
@@ -10224,7 +10224,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/serviceprovider/{serviceprovider_id}/', 'GET',
@@ -10338,7 +10338,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/system/{system_id}/', 'GET',
@@ -10452,7 +10452,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/systemstatus/{systemstatus_id}/', 'GET',
@@ -10566,7 +10566,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/systemtype/{systemtype_id}/', 'GET',
@@ -10680,7 +10680,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/systemuser/{systemuser_id}/', 'GET',
@@ -10794,7 +10794,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/tag/{tag_id}/', 'GET',
@@ -10908,7 +10908,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/tagcolor/{tagcolor_id}/', 'GET',
@@ -11022,7 +11022,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/task/{task_id}/', 'GET',
@@ -11136,7 +11136,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/taskname/{taskname_id}/', 'GET',
@@ -11250,7 +11250,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/taskpriority/{taskpriority_id}/', 'GET',
@@ -11364,7 +11364,7 @@ class ApiApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/taskstatus/{taskstatus_id}/', 'GET',
@@ -11487,7 +11487,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/artifact/{artifact_id}/', 'PUT',
@@ -11610,7 +11610,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/artifacttype/{artifacttype_id}/', 'PUT',
@@ -11733,7 +11733,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/case/{case_id}/', 'PUT',
@@ -11856,7 +11856,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/company/{company_id}/', 'PUT',
@@ -11979,7 +11979,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/contact/{contact_id}/', 'PUT',
@@ -12102,7 +12102,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/division/{division_id}/', 'PUT',
@@ -12225,7 +12225,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/dnsname/{dnsname_id}/', 'PUT',
@@ -12348,7 +12348,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/domain/{domain_id}/', 'PUT',
@@ -12471,7 +12471,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/domainuser/{domainuser_id}/', 'PUT',
@@ -12594,7 +12594,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/ip/{ip_id}/', 'PUT',
@@ -12717,7 +12717,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/location/{location_id}/', 'PUT',
@@ -12840,7 +12840,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/os/{os_id}/', 'PUT',
@@ -12963,7 +12963,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/osarch/{osarch_id}/', 'PUT',
@@ -13086,7 +13086,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/reason/{reason_id}/', 'PUT',
@@ -13209,7 +13209,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/recommendation/{recommendation_id}/', 'PUT',
@@ -13332,7 +13332,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/serviceprovider/{serviceprovider_id}/', 'PUT',
@@ -13455,7 +13455,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/system/{system_id}/', 'PUT',
@@ -13578,7 +13578,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/systemtype/{systemtype_id}/', 'PUT',
@@ -13701,7 +13701,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/systemuser/{systemuser_id}/', 'PUT',
@@ -13824,7 +13824,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/tag/{tag_id}/', 'PUT',
@@ -13947,7 +13947,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/task/{task_id}/', 'PUT',
@@ -14070,7 +14070,7 @@ class ApiApi(object):
             ['application/json', 'application/x-www-form-urlencoded', 'multipart/form-data'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['BasicAuth']  # noqa: E501
 
         return self.api_client.call_api(
             '/api/taskname/{taskname_id}/', 'PUT',
