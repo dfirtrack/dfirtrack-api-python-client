@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**create_artifacttype**](ApiApi.md#create_artifacttype) | **POST** /api/artifacttype/ | 
 [**create_auth_token**](ApiApi.md#create_auth_token) | **POST** /api/token-auth/ | 
 [**create_case**](ApiApi.md#create_case) | **POST** /api/case/ | 
+[**create_casetype**](ApiApi.md#create_casetype) | **POST** /api/casetype/ | 
 [**create_company**](ApiApi.md#create_company) | **POST** /api/company/ | 
 [**create_contact**](ApiApi.md#create_contact) | **POST** /api/contact/ | 
 [**create_division**](ApiApi.md#create_division) | **POST** /api/division/ | 
@@ -28,10 +29,14 @@ Method | HTTP request | Description
 [**create_task**](ApiApi.md#create_task) | **POST** /api/task/ | 
 [**create_taskname**](ApiApi.md#create_taskname) | **POST** /api/taskname/ | 
 [**list_analysisstatus**](ApiApi.md#list_analysisstatus) | **GET** /api/analysisstatus/ | 
+[**list_artifactprioritys**](ApiApi.md#list_artifactprioritys) | **GET** /api/artifactpriority/ | 
 [**list_artifacts**](ApiApi.md#list_artifacts) | **GET** /api/artifact/ | 
 [**list_artifactstatus**](ApiApi.md#list_artifactstatus) | **GET** /api/artifactstatus/ | 
 [**list_artifacttypes**](ApiApi.md#list_artifacttypes) | **GET** /api/artifacttype/ | 
+[**list_caseprioritys**](ApiApi.md#list_caseprioritys) | **GET** /api/casepriority/ | 
 [**list_cases**](ApiApi.md#list_cases) | **GET** /api/case/ | 
+[**list_casestatus**](ApiApi.md#list_casestatus) | **GET** /api/casestatus/ | 
+[**list_casetypes**](ApiApi.md#list_casetypes) | **GET** /api/casetype/ | 
 [**list_companys**](ApiApi.md#list_companys) | **GET** /api/company/ | 
 [**list_contacts**](ApiApi.md#list_contacts) | **GET** /api/contact/ | 
 [**list_divisions**](ApiApi.md#list_divisions) | **GET** /api/division/ | 
@@ -58,6 +63,7 @@ Method | HTTP request | Description
 [**partial_update_artifact**](ApiApi.md#partial_update_artifact) | **PATCH** /api/artifact/{artifact_id}/ | 
 [**partial_update_artifacttype**](ApiApi.md#partial_update_artifacttype) | **PATCH** /api/artifacttype/{artifacttype_id}/ | 
 [**partial_update_case**](ApiApi.md#partial_update_case) | **PATCH** /api/case/{case_id}/ | 
+[**partial_update_casetype**](ApiApi.md#partial_update_casetype) | **PATCH** /api/casetype/{casetype_id}/ | 
 [**partial_update_company**](ApiApi.md#partial_update_company) | **PATCH** /api/company/{company_id}/ | 
 [**partial_update_contact**](ApiApi.md#partial_update_contact) | **PATCH** /api/contact/{contact_id}/ | 
 [**partial_update_division**](ApiApi.md#partial_update_division) | **PATCH** /api/division/{division_id}/ | 
@@ -79,9 +85,13 @@ Method | HTTP request | Description
 [**partial_update_taskname**](ApiApi.md#partial_update_taskname) | **PATCH** /api/taskname/{taskname_id}/ | 
 [**retrieve_analysisstatus**](ApiApi.md#retrieve_analysisstatus) | **GET** /api/analysisstatus/{analysisstatus_id}/ | 
 [**retrieve_artifact**](ApiApi.md#retrieve_artifact) | **GET** /api/artifact/{artifact_id}/ | 
+[**retrieve_artifactpriority**](ApiApi.md#retrieve_artifactpriority) | **GET** /api/artifactpriority/{artifactpriority_id}/ | 
 [**retrieve_artifactstatus**](ApiApi.md#retrieve_artifactstatus) | **GET** /api/artifactstatus/{artifactstatus_id}/ | 
 [**retrieve_artifacttype**](ApiApi.md#retrieve_artifacttype) | **GET** /api/artifacttype/{artifacttype_id}/ | 
 [**retrieve_case**](ApiApi.md#retrieve_case) | **GET** /api/case/{case_id}/ | 
+[**retrieve_casepriority**](ApiApi.md#retrieve_casepriority) | **GET** /api/casepriority/{casepriority_id}/ | 
+[**retrieve_casestatus**](ApiApi.md#retrieve_casestatus) | **GET** /api/casestatus/{casestatus_id}/ | 
+[**retrieve_casetype**](ApiApi.md#retrieve_casetype) | **GET** /api/casetype/{casetype_id}/ | 
 [**retrieve_company**](ApiApi.md#retrieve_company) | **GET** /api/company/{company_id}/ | 
 [**retrieve_contact**](ApiApi.md#retrieve_contact) | **GET** /api/contact/{contact_id}/ | 
 [**retrieve_division**](ApiApi.md#retrieve_division) | **GET** /api/division/{division_id}/ | 
@@ -108,6 +118,7 @@ Method | HTTP request | Description
 [**update_artifact**](ApiApi.md#update_artifact) | **PUT** /api/artifact/{artifact_id}/ | 
 [**update_artifacttype**](ApiApi.md#update_artifacttype) | **PUT** /api/artifacttype/{artifacttype_id}/ | 
 [**update_case**](ApiApi.md#update_case) | **PUT** /api/case/{case_id}/ | 
+[**update_casetype**](ApiApi.md#update_casetype) | **PUT** /api/casetype/{casetype_id}/ | 
 [**update_company**](ApiApi.md#update_company) | **PUT** /api/company/{company_id}/ | 
 [**update_contact**](ApiApi.md#update_contact) | **PUT** /api/contact/{contact_id}/ | 
 [**update_division**](ApiApi.md#update_division) | **PUT** /api/division/{division_id}/ | 
@@ -176,10 +187,14 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         artifact_id=1,
         artifact_uuid="artifact_uuid_example",
         artifact_name="artifact_name_example",
+        artifactpriority=1,
         artifactstatus=1,
         artifacttype=1,
         case=1,
         system=1,
+        tag=[
+            1,
+        ],
         artifact_md5="artifact_md5_example",
         artifact_sha1="artifact_sha1_example",
         artifact_sha256="artifact_sha256_example",
@@ -272,6 +287,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     artifacttype = Artifacttype(
+        artifacttype_id=1,
         artifacttype_name="artifacttype_name_example",
     ) # Artifacttype |  (optional)
 
@@ -444,10 +460,21 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     case = Case(
         case_id=1,
+        case_id_external="case_id_external_example",
         case_name="case_name_example",
+        casepriority=1,
+        casestatus=1,
+        casetype=1,
+        tag=[
+            1,
+        ],
         case_is_incident=True,
+        case_start_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        case_end_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_created_by_user_id=1,
         case_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        case_modified_by_user_id=1,
+        case_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
     ) # Case |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -468,6 +495,89 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Case**](Case.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**201** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **create_casetype**
+> Casetype create_casetype()
+
+
+
+all objects, allowed: GET + POST
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.casetype import Casetype
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    casetype = Casetype(
+        casetype_id=1,
+        casetype_name="casetype_name_example",
+    ) # Casetype |  (optional)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.create_casetype(casetype=casetype)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->create_casetype: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **casetype** | [**Casetype**](Casetype.md)|  | [optional]
+
+### Return type
+
+[**Casetype**](Casetype.md)
 
 ### Authorization
 
@@ -1645,7 +1755,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         case=[
             1,
         ],
-        system_api_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         system_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         system_created_by_user_id=1,
         system_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
@@ -1991,6 +2100,8 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         taskname=1,
         taskpriority=1,
         taskstatus=1,
+        artifact=1,
+        case=1,
         system=1,
         task_assigned_to_user_id=1,
         tag=[
@@ -2182,6 +2293,81 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**[Analysisstatus]**](Analysisstatus.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_artifactprioritys**
+> [Artifactpriority] list_artifactprioritys()
+
+
+
+all objects, allowed: GET
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.artifactpriority import Artifactpriority
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+
+    # example, this endpoint has no required or optional parameters
+    try:
+        api_response = api_instance.list_artifactprioritys()
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->list_artifactprioritys: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**[Artifactpriority]**](Artifactpriority.md)
 
 ### Authorization
 
@@ -2424,6 +2610,81 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **list_caseprioritys**
+> [Casepriority] list_caseprioritys()
+
+
+
+all objects, allowed: GET
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.casepriority import Casepriority
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+
+    # example, this endpoint has no required or optional parameters
+    try:
+        api_response = api_instance.list_caseprioritys()
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->list_caseprioritys: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**[Casepriority]**](Casepriority.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **list_cases**
 > [Case] list_cases()
 
@@ -2482,6 +2743,156 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**[Case]**](Case.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_casestatus**
+> [Casestatus] list_casestatus()
+
+
+
+all objects, allowed: GET
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.casestatus import Casestatus
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+
+    # example, this endpoint has no required or optional parameters
+    try:
+        api_response = api_instance.list_casestatus()
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->list_casestatus: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**[Casestatus]**](Casestatus.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_casetypes**
+> [Casetype] list_casetypes()
+
+
+
+all objects, allowed: GET + POST
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.casetype import Casetype
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+
+    # example, this endpoint has no required or optional parameters
+    try:
+        api_response = api_instance.list_casetypes()
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->list_casetypes: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**[Casetype]**](Casetype.md)
 
 ### Authorization
 
@@ -4272,10 +4683,14 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         artifact_id=1,
         artifact_uuid="artifact_uuid_example",
         artifact_name="artifact_name_example",
+        artifactpriority=1,
         artifactstatus=1,
         artifacttype=1,
         case=1,
         system=1,
+        tag=[
+            1,
+        ],
         artifact_md5="artifact_md5_example",
         artifact_sha1="artifact_sha1_example",
         artifact_sha256="artifact_sha256_example",
@@ -4377,6 +4792,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     artifacttype_id = "artifacttype_id_example" # str | A unique integer value identifying this artifacttype.
     artifacttype = Artifacttype(
+        artifacttype_id=1,
         artifacttype_name="artifacttype_name_example",
     ) # Artifacttype |  (optional)
 
@@ -4469,10 +4885,21 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     case_id = "case_id_example" # str | A unique integer value identifying this case.
     case = Case(
         case_id=1,
+        case_id_external="case_id_external_example",
         case_name="case_name_example",
+        casepriority=1,
+        casestatus=1,
+        casetype=1,
+        tag=[
+            1,
+        ],
         case_is_incident=True,
+        case_start_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        case_end_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_created_by_user_id=1,
         case_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        case_modified_by_user_id=1,
+        case_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
     ) # Case |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -4501,6 +4928,98 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Case**](Case.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **partial_update_casetype**
+> Casetype partial_update_casetype(casetype_id)
+
+
+
+single object, allowed: GET + PUT
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.casetype import Casetype
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    casetype_id = "casetype_id_example" # str | A unique integer value identifying this casetype.
+    casetype = Casetype(
+        casetype_id=1,
+        casetype_name="casetype_name_example",
+    ) # Casetype |  (optional)
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.partial_update_casetype(casetype_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->partial_update_casetype: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.partial_update_casetype(casetype_id, casetype=casetype)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->partial_update_casetype: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **casetype_id** | **str**| A unique integer value identifying this casetype. |
+ **casetype** | [**Casetype**](Casetype.md)|  | [optional]
+
+### Return type
+
+[**Casetype**](Casetype.md)
 
 ### Authorization
 
@@ -5796,7 +6315,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         case=[
             1,
         ],
-        system_api_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         system_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         system_created_by_user_id=1,
         system_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
@@ -6178,6 +6696,8 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         taskname=1,
         taskpriority=1,
         taskstatus=1,
+        artifact=1,
+        case=1,
         system=1,
         task_assigned_to_user_id=1,
         tag=[
@@ -6486,6 +7006,85 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **retrieve_artifactpriority**
+> Artifactpriority retrieve_artifactpriority(artifactpriority_id)
+
+
+
+single object, allowed: GET
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.artifactpriority import Artifactpriority
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    artifactpriority_id = "artifactpriority_id_example" # str | A unique integer value identifying this artifactpriority.
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.retrieve_artifactpriority(artifactpriority_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->retrieve_artifactpriority: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **artifactpriority_id** | **str**| A unique integer value identifying this artifactpriority. |
+
+### Return type
+
+[**Artifactpriority**](Artifactpriority.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **retrieve_artifactstatus**
 > Artifactstatus retrieve_artifactstatus(artifactstatus_id)
 
@@ -6706,6 +7305,243 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Case**](Case.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **retrieve_casepriority**
+> Casepriority retrieve_casepriority(casepriority_id)
+
+
+
+single object, allowed: GET
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.casepriority import Casepriority
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    casepriority_id = "casepriority_id_example" # str | A unique integer value identifying this casepriority.
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.retrieve_casepriority(casepriority_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->retrieve_casepriority: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **casepriority_id** | **str**| A unique integer value identifying this casepriority. |
+
+### Return type
+
+[**Casepriority**](Casepriority.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **retrieve_casestatus**
+> Casestatus retrieve_casestatus(casestatus_id)
+
+
+
+single object, allowed: GET
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.casestatus import Casestatus
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    casestatus_id = "casestatus_id_example" # str | A unique integer value identifying this casestatus.
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.retrieve_casestatus(casestatus_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->retrieve_casestatus: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **casestatus_id** | **str**| A unique integer value identifying this casestatus. |
+
+### Return type
+
+[**Casestatus**](Casestatus.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **retrieve_casetype**
+> Casetype retrieve_casetype(casetype_id)
+
+
+
+single object, allowed: GET + PUT
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.casetype import Casetype
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    casetype_id = "casetype_id_example" # str | A unique integer value identifying this casetype.
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.retrieve_casetype(casetype_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->retrieve_casetype: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **casetype_id** | **str**| A unique integer value identifying this casetype. |
+
+### Return type
+
+[**Casetype**](Casetype.md)
 
 ### Authorization
 
@@ -8588,10 +9424,14 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         artifact_id=1,
         artifact_uuid="artifact_uuid_example",
         artifact_name="artifact_name_example",
+        artifactpriority=1,
         artifactstatus=1,
         artifacttype=1,
         case=1,
         system=1,
+        tag=[
+            1,
+        ],
         artifact_md5="artifact_md5_example",
         artifact_sha1="artifact_sha1_example",
         artifact_sha256="artifact_sha256_example",
@@ -8693,6 +9533,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     artifacttype_id = "artifacttype_id_example" # str | A unique integer value identifying this artifacttype.
     artifacttype = Artifacttype(
+        artifacttype_id=1,
         artifacttype_name="artifacttype_name_example",
     ) # Artifacttype |  (optional)
 
@@ -8785,10 +9626,21 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     case_id = "case_id_example" # str | A unique integer value identifying this case.
     case = Case(
         case_id=1,
+        case_id_external="case_id_external_example",
         case_name="case_name_example",
+        casepriority=1,
+        casestatus=1,
+        casetype=1,
+        tag=[
+            1,
+        ],
         case_is_incident=True,
+        case_start_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        case_end_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_created_by_user_id=1,
         case_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        case_modified_by_user_id=1,
+        case_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
     ) # Case |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -8817,6 +9669,98 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Case**](Case.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **update_casetype**
+> Casetype update_casetype(casetype_id)
+
+
+
+single object, allowed: GET + PUT
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.casetype import Casetype
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    casetype_id = "casetype_id_example" # str | A unique integer value identifying this casetype.
+    casetype = Casetype(
+        casetype_id=1,
+        casetype_name="casetype_name_example",
+    ) # Casetype |  (optional)
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.update_casetype(casetype_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->update_casetype: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.update_casetype(casetype_id, casetype=casetype)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->update_casetype: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **casetype_id** | **str**| A unique integer value identifying this casetype. |
+ **casetype** | [**Casetype**](Casetype.md)|  | [optional]
+
+### Return type
+
+[**Casetype**](Casetype.md)
 
 ### Authorization
 
@@ -10112,7 +11056,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         case=[
             1,
         ],
-        system_api_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         system_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         system_created_by_user_id=1,
         system_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
@@ -10494,6 +11437,8 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         taskname=1,
         taskpriority=1,
         taskstatus=1,
+        artifact=1,
+        case=1,
         system=1,
         task_assigned_to_user_id=1,
         tag=[

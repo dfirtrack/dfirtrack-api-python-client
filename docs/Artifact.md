@@ -10,8 +10,10 @@ Name | Type | Description | Notes
 **artifact_modified_by_user_id** | **int** |  | 
 **artifact_id** | **int** |  | [optional] [readonly] 
 **artifact_uuid** | **str** |  | [optional] [readonly] 
+**artifactpriority** | **int** |  | [optional] 
 **artifactstatus** | **int** |  | [optional] 
 **case** | **int, none_type** |  | [optional] 
+**tag** | **[int]** |  | [optional] 
 **artifact_md5** | **str, none_type** |  | [optional] 
 **artifact_sha1** | **str, none_type** |  | [optional] 
 **artifact_sha256** | **str, none_type** |  | [optional] 

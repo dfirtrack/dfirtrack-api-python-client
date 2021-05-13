@@ -6,7 +6,6 @@ Name | Type | Description | Notes
 **system_name** | **str** |  | 
 **systemstatus** | **int** |  | 
 **system_created_by_user_id** | **int** |  | 
-**system_modify_time** | **datetime** |  | 
 **system_modified_by_user_id** | **int** |  | 
 **system_id** | **int** |  | [optional] [readonly] 
 **system_uuid** | **str** |  | [optional] [readonly] 
@@ -29,8 +28,8 @@ Name | Type | Description | Notes
 **contact** | **int, none_type** |  | [optional] 
 **tag** | **[int]** |  | [optional] 
 **case** | **[int]** |  | [optional] 
-**system_api_time** | **datetime, none_type** |  | [optional] 
 **system_create_time** | **datetime** |  | [optional] [readonly] 
+**system_modify_time** | **datetime** |  | [optional] [readonly] 
 **system_export_markdown** | **bool** |  | [optional] 
 **system_export_spreadsheet** | **bool** |  | [optional] 
 

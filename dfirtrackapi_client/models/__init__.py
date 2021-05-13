@@ -11,10 +11,14 @@
 
 from dfirtrackapi_client.model.analysisstatus import Analysisstatus
 from dfirtrackapi_client.model.artifact import Artifact
+from dfirtrackapi_client.model.artifactpriority import Artifactpriority
 from dfirtrackapi_client.model.artifactstatus import Artifactstatus
 from dfirtrackapi_client.model.artifacttype import Artifacttype
 from dfirtrackapi_client.model.auth_token import AuthToken
 from dfirtrackapi_client.model.case import Case
+from dfirtrackapi_client.model.casepriority import Casepriority
+from dfirtrackapi_client.model.casestatus import Casestatus
+from dfirtrackapi_client.model.casetype import Casetype
 from dfirtrackapi_client.model.company import Company
 from dfirtrackapi_client.model.contact import Contact
 from dfirtrackapi_client.model.division import Division

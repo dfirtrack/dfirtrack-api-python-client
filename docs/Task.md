@@ -10,6 +10,8 @@ Name | Type | Description | Notes
 **task_modified_by_user_id** | **int** |  | 
 **task_id** | **int** |  | [optional] [readonly] 
 **parent_task** | **int, none_type** |  | [optional] 
+**artifact** | **int, none_type** |  | [optional] 
+**case** | **int, none_type** |  | [optional] 
 **system** | **int, none_type** |  | [optional] 
 **task_assigned_to_user_id** | **int, none_type** |  | [optional] 
 **tag** | **[int]** |  | [optional] 
