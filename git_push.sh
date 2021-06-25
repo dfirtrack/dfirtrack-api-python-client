@@ -29,7 +29,7 @@ if [ "$release_note" = "" ]; then
 fi
 
 # Initialize the local directory as a Git repository
-git init
+#git init
 
 # Adds the files in the local repository and stages them for commit.
 git add .

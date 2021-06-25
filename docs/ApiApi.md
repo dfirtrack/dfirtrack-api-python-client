@@ -15,12 +15,15 @@ Method | HTTP request | Description
 [**create_dnsname**](ApiApi.md#create_dnsname) | **POST** /api/dnsname/ | 
 [**create_domain**](ApiApi.md#create_domain) | **POST** /api/domain/ | 
 [**create_domainuser**](ApiApi.md#create_domainuser) | **POST** /api/domainuser/ | 
+[**create_headline**](ApiApi.md#create_headline) | **POST** /api/headline/ | 
 [**create_ip**](ApiApi.md#create_ip) | **POST** /api/ip/ | 
 [**create_location**](ApiApi.md#create_location) | **POST** /api/location/ | 
+[**create_note**](ApiApi.md#create_note) | **POST** /api/note/ | 
 [**create_os**](ApiApi.md#create_os) | **POST** /api/os/ | 
 [**create_osarch**](ApiApi.md#create_osarch) | **POST** /api/osarch/ | 
 [**create_reason**](ApiApi.md#create_reason) | **POST** /api/reason/ | 
 [**create_recommendation**](ApiApi.md#create_recommendation) | **POST** /api/recommendation/ | 
+[**create_reportitem**](ApiApi.md#create_reportitem) | **POST** /api/reportitem/ | 
 [**create_serviceprovider**](ApiApi.md#create_serviceprovider) | **POST** /api/serviceprovider/ | 
 [**create_system**](ApiApi.md#create_system) | **POST** /api/system/ | 
 [**create_systemtype**](ApiApi.md#create_systemtype) | **POST** /api/systemtype/ | 
@@ -43,12 +46,16 @@ Method | HTTP request | Description
 [**list_dnsnames**](ApiApi.md#list_dnsnames) | **GET** /api/dnsname/ | 
 [**list_domains**](ApiApi.md#list_domains) | **GET** /api/domain/ | 
 [**list_domainusers**](ApiApi.md#list_domainusers) | **GET** /api/domainuser/ | 
+[**list_headlines**](ApiApi.md#list_headlines) | **GET** /api/headline/ | 
 [**list_ips**](ApiApi.md#list_ips) | **GET** /api/ip/ | 
 [**list_locations**](ApiApi.md#list_locations) | **GET** /api/location/ | 
+[**list_notes**](ApiApi.md#list_notes) | **GET** /api/note/ | 
+[**list_notestatus**](ApiApi.md#list_notestatus) | **GET** /api/notestatus/ | 
 [**list_os**](ApiApi.md#list_os) | **GET** /api/os/ | 
 [**list_osarchs**](ApiApi.md#list_osarchs) | **GET** /api/osarch/ | 
 [**list_reasons**](ApiApi.md#list_reasons) | **GET** /api/reason/ | 
 [**list_recommendations**](ApiApi.md#list_recommendations) | **GET** /api/recommendation/ | 
+[**list_reportitems**](ApiApi.md#list_reportitems) | **GET** /api/reportitem/ | 
 [**list_serviceproviders**](ApiApi.md#list_serviceproviders) | **GET** /api/serviceprovider/ | 
 [**list_systems**](ApiApi.md#list_systems) | **GET** /api/system/ | 
 [**list_systemstatus**](ApiApi.md#list_systemstatus) | **GET** /api/systemstatus/ | 
@@ -70,12 +77,15 @@ Method | HTTP request | Description
 [**partial_update_dnsname**](ApiApi.md#partial_update_dnsname) | **PATCH** /api/dnsname/{dnsname_id}/ | 
 [**partial_update_domain**](ApiApi.md#partial_update_domain) | **PATCH** /api/domain/{domain_id}/ | 
 [**partial_update_domainuser**](ApiApi.md#partial_update_domainuser) | **PATCH** /api/domainuser/{domainuser_id}/ | 
+[**partial_update_headline**](ApiApi.md#partial_update_headline) | **PATCH** /api/headline/{headline_id}/ | 
 [**partial_update_ip**](ApiApi.md#partial_update_ip) | **PATCH** /api/ip/{ip_id}/ | 
 [**partial_update_location**](ApiApi.md#partial_update_location) | **PATCH** /api/location/{location_id}/ | 
+[**partial_update_note**](ApiApi.md#partial_update_note) | **PATCH** /api/note/{note_id}/ | 
 [**partial_update_os**](ApiApi.md#partial_update_os) | **PATCH** /api/os/{os_id}/ | 
 [**partial_update_osarch**](ApiApi.md#partial_update_osarch) | **PATCH** /api/osarch/{osarch_id}/ | 
 [**partial_update_reason**](ApiApi.md#partial_update_reason) | **PATCH** /api/reason/{reason_id}/ | 
 [**partial_update_recommendation**](ApiApi.md#partial_update_recommendation) | **PATCH** /api/recommendation/{recommendation_id}/ | 
+[**partial_update_reportitem**](ApiApi.md#partial_update_reportitem) | **PATCH** /api/reportitem/{reportitem_id}/ | 
 [**partial_update_serviceprovider**](ApiApi.md#partial_update_serviceprovider) | **PATCH** /api/serviceprovider/{serviceprovider_id}/ | 
 [**partial_update_system**](ApiApi.md#partial_update_system) | **PATCH** /api/system/{system_id}/ | 
 [**partial_update_systemtype**](ApiApi.md#partial_update_systemtype) | **PATCH** /api/systemtype/{systemtype_id}/ | 
@@ -98,12 +108,16 @@ Method | HTTP request | Description
 [**retrieve_dnsname**](ApiApi.md#retrieve_dnsname) | **GET** /api/dnsname/{dnsname_id}/ | 
 [**retrieve_domain**](ApiApi.md#retrieve_domain) | **GET** /api/domain/{domain_id}/ | 
 [**retrieve_domainuser**](ApiApi.md#retrieve_domainuser) | **GET** /api/domainuser/{domainuser_id}/ | 
+[**retrieve_headline**](ApiApi.md#retrieve_headline) | **GET** /api/headline/{headline_id}/ | 
 [**retrieve_ip**](ApiApi.md#retrieve_ip) | **GET** /api/ip/{ip_id}/ | 
 [**retrieve_location**](ApiApi.md#retrieve_location) | **GET** /api/location/{location_id}/ | 
+[**retrieve_note**](ApiApi.md#retrieve_note) | **GET** /api/note/{note_id}/ | 
+[**retrieve_notestatus**](ApiApi.md#retrieve_notestatus) | **GET** /api/notestatus/{notestatus_id}/ | 
 [**retrieve_os**](ApiApi.md#retrieve_os) | **GET** /api/os/{os_id}/ | 
 [**retrieve_osarch**](ApiApi.md#retrieve_osarch) | **GET** /api/osarch/{osarch_id}/ | 
 [**retrieve_reason**](ApiApi.md#retrieve_reason) | **GET** /api/reason/{reason_id}/ | 
 [**retrieve_recommendation**](ApiApi.md#retrieve_recommendation) | **GET** /api/recommendation/{recommendation_id}/ | 
+[**retrieve_reportitem**](ApiApi.md#retrieve_reportitem) | **GET** /api/reportitem/{reportitem_id}/ | 
 [**retrieve_serviceprovider**](ApiApi.md#retrieve_serviceprovider) | **GET** /api/serviceprovider/{serviceprovider_id}/ | 
 [**retrieve_system**](ApiApi.md#retrieve_system) | **GET** /api/system/{system_id}/ | 
 [**retrieve_systemstatus**](ApiApi.md#retrieve_systemstatus) | **GET** /api/systemstatus/{systemstatus_id}/ | 
@@ -125,12 +139,15 @@ Method | HTTP request | Description
 [**update_dnsname**](ApiApi.md#update_dnsname) | **PUT** /api/dnsname/{dnsname_id}/ | 
 [**update_domain**](ApiApi.md#update_domain) | **PUT** /api/domain/{domain_id}/ | 
 [**update_domainuser**](ApiApi.md#update_domainuser) | **PUT** /api/domainuser/{domainuser_id}/ | 
+[**update_headline**](ApiApi.md#update_headline) | **PUT** /api/headline/{headline_id}/ | 
 [**update_ip**](ApiApi.md#update_ip) | **PUT** /api/ip/{ip_id}/ | 
 [**update_location**](ApiApi.md#update_location) | **PUT** /api/location/{location_id}/ | 
+[**update_note**](ApiApi.md#update_note) | **PUT** /api/note/{note_id}/ | 
 [**update_os**](ApiApi.md#update_os) | **PUT** /api/os/{os_id}/ | 
 [**update_osarch**](ApiApi.md#update_osarch) | **PUT** /api/osarch/{osarch_id}/ | 
 [**update_reason**](ApiApi.md#update_reason) | **PUT** /api/reason/{reason_id}/ | 
 [**update_recommendation**](ApiApi.md#update_recommendation) | **PUT** /api/recommendation/{recommendation_id}/ | 
+[**update_reportitem**](ApiApi.md#update_reportitem) | **PUT** /api/reportitem/{reportitem_id}/ | 
 [**update_serviceprovider**](ApiApi.md#update_serviceprovider) | **PUT** /api/serviceprovider/{serviceprovider_id}/ | 
 [**update_system**](ApiApi.md#update_system) | **PUT** /api/system/{system_id}/ | 
 [**update_systemtype**](ApiApi.md#update_systemtype) | **PUT** /api/systemtype/{systemtype_id}/ | 
@@ -1099,6 +1116,89 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **create_headline**
+> Headline create_headline()
+
+
+
+all objects, allowed: GET + POST
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.headline import Headline
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    headline = Headline(
+        headline_id=1,
+        headline_name="headline_name_example",
+    ) # Headline |  (optional)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.create_headline(headline=headline)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->create_headline: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **headline** | [**Headline**](Headline.md)|  | [optional]
+
+### Return type
+
+[**Headline**](Headline.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**201** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **create_ip**
 > Ip create_ip()
 
@@ -1248,6 +1348,100 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Location**](Location.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**201** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **create_note**
+> Note create_note()
+
+
+
+all objects, allowed: GET + POST
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.note import Note
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    note = Note(
+        note_id=1,
+        note_title="note_title_example",
+        note_content="note_content_example",
+        note_version=-2147483648,
+        case=1,
+        notestatus=1,
+        tag=[
+            1,
+        ],
+        note_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        note_created_by_user_id=1,
+        note_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        note_modified_by_user_id=1,
+    ) # Note |  (optional)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.create_note(note=note)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->create_note: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **note** | [**Note**](Note.md)|  | [optional]
+
+### Return type
+
+[**Note**](Note.md)
 
 ### Authorization
 
@@ -1580,6 +1774,101 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Recommendation**](Recommendation.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**201** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **create_reportitem**
+> Reportitem create_reportitem()
+
+
+
+all objects, allowed: GET + POST
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.reportitem import Reportitem
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    reportitem = Reportitem(
+        reportitem_id=1,
+        case=1,
+        headline=1,
+        notestatus=1,
+        system=1,
+        tag=[
+            1,
+        ],
+        reportitem_subheadline="reportitem_subheadline_example",
+        reportitem_note="reportitem_note_example",
+        reportitem_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        reportitem_created_by_user_id=1,
+        reportitem_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        reportitem_modified_by_user_id=1,
+    ) # Reportitem |  (optional)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.create_reportitem(reportitem=reportitem)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->create_reportitem: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reportitem** | [**Reportitem**](Reportitem.md)|  | [optional]
+
+### Return type
+
+[**Reportitem**](Reportitem.md)
 
 ### Authorization
 
@@ -3360,6 +3649,81 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **list_headlines**
+> [Headline] list_headlines()
+
+
+
+all objects, allowed: GET + POST
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.headline import Headline
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+
+    # example, this endpoint has no required or optional parameters
+    try:
+        api_response = api_instance.list_headlines()
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->list_headlines: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**[Headline]**](Headline.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **list_ips**
 > [Ip] list_ips()
 
@@ -3493,6 +3857,156 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**[Location]**](Location.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_notes**
+> [Note] list_notes()
+
+
+
+all objects, allowed: GET + POST
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.note import Note
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+
+    # example, this endpoint has no required or optional parameters
+    try:
+        api_response = api_instance.list_notes()
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->list_notes: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**[Note]**](Note.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_notestatus**
+> [Notestatus] list_notestatus()
+
+
+
+all objects, allowed: GET
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.notestatus import Notestatus
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+
+    # example, this endpoint has no required or optional parameters
+    try:
+        api_response = api_instance.list_notestatus()
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->list_notestatus: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**[Notestatus]**](Notestatus.md)
 
 ### Authorization
 
@@ -3793,6 +4307,81 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**[Recommendation]**](Recommendation.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **list_reportitems**
+> [Reportitem] list_reportitems()
+
+
+
+all objects, allowed: GET + POST
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.reportitem import Reportitem
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+
+    # example, this endpoint has no required or optional parameters
+    try:
+        api_response = api_instance.list_reportitems()
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->list_reportitems: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**[Reportitem]**](Reportitem.md)
 
 ### Authorization
 
@@ -5595,6 +6184,98 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **partial_update_headline**
+> Headline partial_update_headline(headline_id)
+
+
+
+single object, allowed: GET + PUT
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.headline import Headline
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    headline_id = "headline_id_example" # str | A unique integer value identifying this headline.
+    headline = Headline(
+        headline_id=1,
+        headline_name="headline_name_example",
+    ) # Headline |  (optional)
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.partial_update_headline(headline_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->partial_update_headline: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.partial_update_headline(headline_id, headline=headline)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->partial_update_headline: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **headline_id** | **str**| A unique integer value identifying this headline. |
+ **headline** | [**Headline**](Headline.md)|  | [optional]
+
+### Return type
+
+[**Headline**](Headline.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **partial_update_ip**
 > Ip partial_update_ip(ip_id)
 
@@ -5762,6 +6443,109 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Location**](Location.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **partial_update_note**
+> Note partial_update_note(note_id)
+
+
+
+single object, allowed: GET + PUT
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.note import Note
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    note_id = "note_id_example" # str | A unique integer value identifying this note.
+    note = Note(
+        note_id=1,
+        note_title="note_title_example",
+        note_content="note_content_example",
+        note_version=-2147483648,
+        case=1,
+        notestatus=1,
+        tag=[
+            1,
+        ],
+        note_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        note_created_by_user_id=1,
+        note_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        note_modified_by_user_id=1,
+    ) # Note |  (optional)
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.partial_update_note(note_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->partial_update_note: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.partial_update_note(note_id, note=note)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->partial_update_note: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **note_id** | **str**| A unique integer value identifying this note. |
+ **note** | [**Note**](Note.md)|  | [optional]
+
+### Return type
+
+[**Note**](Note.md)
 
 ### Authorization
 
@@ -6130,6 +6914,110 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Recommendation**](Recommendation.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **partial_update_reportitem**
+> Reportitem partial_update_reportitem(reportitem_id)
+
+
+
+single object, allowed: GET + PUT
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.reportitem import Reportitem
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    reportitem_id = "reportitem_id_example" # str | A unique integer value identifying this reportitem.
+    reportitem = Reportitem(
+        reportitem_id=1,
+        case=1,
+        headline=1,
+        notestatus=1,
+        system=1,
+        tag=[
+            1,
+        ],
+        reportitem_subheadline="reportitem_subheadline_example",
+        reportitem_note="reportitem_note_example",
+        reportitem_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        reportitem_created_by_user_id=1,
+        reportitem_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        reportitem_modified_by_user_id=1,
+    ) # Reportitem |  (optional)
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.partial_update_reportitem(reportitem_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->partial_update_reportitem: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.partial_update_reportitem(reportitem_id, reportitem=reportitem)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->partial_update_reportitem: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reportitem_id** | **str**| A unique integer value identifying this reportitem. |
+ **reportitem** | [**Reportitem**](Reportitem.md)|  | [optional]
+
+### Return type
+
+[**Reportitem**](Reportitem.md)
 
 ### Authorization
 
@@ -8033,6 +8921,85 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **retrieve_headline**
+> Headline retrieve_headline(headline_id)
+
+
+
+single object, allowed: GET + PUT
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.headline import Headline
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    headline_id = "headline_id_example" # str | A unique integer value identifying this headline.
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.retrieve_headline(headline_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->retrieve_headline: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **headline_id** | **str**| A unique integer value identifying this headline. |
+
+### Return type
+
+[**Headline**](Headline.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **retrieve_ip**
 > Ip retrieve_ip(ip_id)
 
@@ -8174,6 +9141,164 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Location**](Location.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **retrieve_note**
+> Note retrieve_note(note_id)
+
+
+
+single object, allowed: GET + PUT
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.note import Note
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    note_id = "note_id_example" # str | A unique integer value identifying this note.
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.retrieve_note(note_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->retrieve_note: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **note_id** | **str**| A unique integer value identifying this note. |
+
+### Return type
+
+[**Note**](Note.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **retrieve_notestatus**
+> Notestatus retrieve_notestatus(notestatus_id)
+
+
+
+single object, allowed: GET
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.notestatus import Notestatus
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    notestatus_id = "notestatus_id_example" # str | A unique integer value identifying this notestatus.
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.retrieve_notestatus(notestatus_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->retrieve_notestatus: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **notestatus_id** | **str**| A unique integer value identifying this notestatus. |
+
+### Return type
+
+[**Notestatus**](Notestatus.md)
 
 ### Authorization
 
@@ -8490,6 +9615,85 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Recommendation**](Recommendation.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **retrieve_reportitem**
+> Reportitem retrieve_reportitem(reportitem_id)
+
+
+
+single object, allowed: GET + PUT
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.reportitem import Reportitem
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    reportitem_id = "reportitem_id_example" # str | A unique integer value identifying this reportitem.
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.retrieve_reportitem(reportitem_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->retrieve_reportitem: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reportitem_id** | **str**| A unique integer value identifying this reportitem. |
+
+### Return type
+
+[**Reportitem**](Reportitem.md)
 
 ### Authorization
 
@@ -10336,6 +11540,98 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **update_headline**
+> Headline update_headline(headline_id)
+
+
+
+single object, allowed: GET + PUT
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.headline import Headline
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    headline_id = "headline_id_example" # str | A unique integer value identifying this headline.
+    headline = Headline(
+        headline_id=1,
+        headline_name="headline_name_example",
+    ) # Headline |  (optional)
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.update_headline(headline_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->update_headline: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.update_headline(headline_id, headline=headline)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->update_headline: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **headline_id** | **str**| A unique integer value identifying this headline. |
+ **headline** | [**Headline**](Headline.md)|  | [optional]
+
+### Return type
+
+[**Headline**](Headline.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **update_ip**
 > Ip update_ip(ip_id)
 
@@ -10503,6 +11799,109 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Location**](Location.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **update_note**
+> Note update_note(note_id)
+
+
+
+single object, allowed: GET + PUT
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.note import Note
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    note_id = "note_id_example" # str | A unique integer value identifying this note.
+    note = Note(
+        note_id=1,
+        note_title="note_title_example",
+        note_content="note_content_example",
+        note_version=-2147483648,
+        case=1,
+        notestatus=1,
+        tag=[
+            1,
+        ],
+        note_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        note_created_by_user_id=1,
+        note_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        note_modified_by_user_id=1,
+    ) # Note |  (optional)
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.update_note(note_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->update_note: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.update_note(note_id, note=note)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->update_note: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **note_id** | **str**| A unique integer value identifying this note. |
+ **note** | [**Note**](Note.md)|  | [optional]
+
+### Return type
+
+[**Note**](Note.md)
 
 ### Authorization
 
@@ -10871,6 +12270,110 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Recommendation**](Recommendation.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth), [bearerAuth](../README.md#bearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** |  |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **update_reportitem**
+> Reportitem update_reportitem(reportitem_id)
+
+
+
+single object, allowed: GET + PUT
+
+### Example
+
+* Basic Authentication (basicAuth):
+* Bearer Authentication (bearerAuth):
+```python
+import time
+import dfirtrackapi_client
+from dfirtrackapi_client.api import api_api
+from dfirtrackapi_client.model.reportitem import Reportitem
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = dfirtrackapi_client.Configuration(
+    host = "http://localhost"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = dfirtrackapi_client.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Configure Bearer authorization: bearerAuth
+configuration = dfirtrackapi_client.Configuration(
+    access_token = 'YOUR_BEARER_TOKEN'
+)
+
+# Enter a context with an instance of the API client
+with dfirtrackapi_client.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = api_api.ApiApi(api_client)
+    reportitem_id = "reportitem_id_example" # str | A unique integer value identifying this reportitem.
+    reportitem = Reportitem(
+        reportitem_id=1,
+        case=1,
+        headline=1,
+        notestatus=1,
+        system=1,
+        tag=[
+            1,
+        ],
+        reportitem_subheadline="reportitem_subheadline_example",
+        reportitem_note="reportitem_note_example",
+        reportitem_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        reportitem_created_by_user_id=1,
+        reportitem_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
+        reportitem_modified_by_user_id=1,
+    ) # Reportitem |  (optional)
+
+    # example passing only required values which don't have defaults set
+    try:
+        api_response = api_instance.update_reportitem(reportitem_id)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->update_reportitem: %s\n" % e)
+
+    # example passing only required values which don't have defaults set
+    # and optional values
+    try:
+        api_response = api_instance.update_reportitem(reportitem_id, reportitem=reportitem)
+        pprint(api_response)
+    except dfirtrackapi_client.ApiException as e:
+        print("Exception when calling ApiApi->update_reportitem: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reportitem_id** | **str**| A unique integer value identifying this reportitem. |
+ **reportitem** | [**Reportitem**](Reportitem.md)|  | [optional]
+
+### Return type
+
+[**Reportitem**](Reportitem.md)
 
 ### Authorization
 

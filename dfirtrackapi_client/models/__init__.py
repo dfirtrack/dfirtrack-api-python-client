@@ -25,12 +25,16 @@ from dfirtrackapi_client.model.division import Division
 from dfirtrackapi_client.model.dnsname import Dnsname
 from dfirtrackapi_client.model.domain import Domain
 from dfirtrackapi_client.model.domainuser import Domainuser
+from dfirtrackapi_client.model.headline import Headline
 from dfirtrackapi_client.model.ip import Ip
 from dfirtrackapi_client.model.location import Location
+from dfirtrackapi_client.model.note import Note
+from dfirtrackapi_client.model.notestatus import Notestatus
 from dfirtrackapi_client.model.os import Os
 from dfirtrackapi_client.model.osarch import Osarch
 from dfirtrackapi_client.model.reason import Reason
 from dfirtrackapi_client.model.recommendation import Recommendation
+from dfirtrackapi_client.model.reportitem import Reportitem
 from dfirtrackapi_client.model.serviceprovider import Serviceprovider
 from dfirtrackapi_client.model.system import System
 from dfirtrackapi_client.model.systemstatus import Systemstatus
