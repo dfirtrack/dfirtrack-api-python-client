@@ -87,8 +87,4 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_artifactpriority.py
-test/test_casepriority.py
-test/test_casestatus.py
-test/test_casetype.py
 tox.ini
