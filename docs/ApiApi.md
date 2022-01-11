@@ -168,6 +168,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -201,8 +202,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     artifact = Artifact(
-        artifact_id=1,
-        artifact_uuid="artifact_uuid_example",
         artifact_name="artifact_name_example",
         artifactpriority=1,
         artifactstatus=1,
@@ -216,12 +215,9 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         artifact_sha1="artifact_sha1_example",
         artifact_sha256="artifact_sha256_example",
         artifact_source_path="artifact_source_path_example",
-        artifact_storage_path="artifact_storage_path_example",
         artifact_acquisition_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         artifact_requested_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
-        artifact_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         artifact_created_by_user_id=1,
-        artifact_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         artifact_modified_by_user_id=1,
     ) # Artifact |  (optional)
 
@@ -233,6 +229,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_artifact: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -253,7 +250,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -271,6 +270,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -304,7 +304,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     artifacttype = Artifacttype(
-        artifacttype_id=1,
         artifacttype_name="artifacttype_name_example",
     ) # Artifacttype |  (optional)
 
@@ -316,6 +315,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_artifacttype: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -336,7 +336,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -352,6 +354,7 @@ Name | Type | Description  | Notes
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -404,6 +407,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->create_auth_token: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -425,7 +429,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/x-www-form-urlencoded, multipart/form-data, application/json
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -443,6 +449,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -476,7 +483,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     case = Case(
-        case_id=1,
         case_id_external="case_id_external_example",
         case_name="case_name_example",
         casepriority=1,
@@ -489,9 +495,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         case_start_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_end_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_created_by_user_id=1,
-        case_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_modified_by_user_id=1,
-        case_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
     ) # Case |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -502,6 +506,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_case: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -522,7 +527,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -540,6 +547,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -573,7 +581,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     casetype = Casetype(
-        casetype_id=1,
         casetype_name="casetype_name_example",
     ) # Casetype |  (optional)
 
@@ -585,6 +592,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_casetype: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -605,7 +613,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -623,6 +633,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -656,7 +667,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     company = Company(
-        company_id=1,
         company_name="company_name_example",
         division=1,
     ) # Company |  (optional)
@@ -669,6 +679,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_company: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -689,7 +700,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -707,6 +720,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -740,7 +754,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     contact = Contact(
-        contact_id=1,
         contact_name="contact_name_example",
         contact_email="contact_email_example",
         contact_phone="contact_phone_example",
@@ -754,6 +767,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_contact: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -774,7 +788,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -792,6 +808,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -825,7 +842,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     division = Division(
-        division_id=1,
         division_name="division_name_example",
     ) # Division |  (optional)
 
@@ -837,6 +853,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_division: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -857,7 +874,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -875,6 +894,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -908,7 +928,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     dnsname = Dnsname(
-        dnsname_id=1,
         dnsname_name="dnsname_name_example",
         domain=1,
     ) # Dnsname |  (optional)
@@ -921,6 +940,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_dnsname: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -941,7 +961,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -959,6 +981,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -992,7 +1015,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     domain = Domain(
-        domain_id=1,
         domain_name="domain_name_example",
     ) # Domain |  (optional)
 
@@ -1004,6 +1026,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_domain: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -1024,7 +1047,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -1042,6 +1067,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -1075,7 +1101,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     domainuser = Domainuser(
-        domainuser_id=1,
         domainuser_name="domainuser_name_example",
         domain=1,
         domainuser_is_domainadmin=True,
@@ -1089,6 +1114,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_domainuser: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -1109,7 +1135,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -1127,6 +1155,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -1160,7 +1189,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     headline = Headline(
-        headline_id=1,
         headline_name="headline_name_example",
     ) # Headline |  (optional)
 
@@ -1172,6 +1200,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_headline: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -1192,7 +1221,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -1210,6 +1241,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -1243,7 +1275,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     ip = Ip(
-        ip_id=1,
         ip_ip="ip_ip_example",
     ) # Ip |  (optional)
 
@@ -1255,6 +1286,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_ip: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -1275,7 +1307,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -1293,6 +1327,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -1326,7 +1361,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     location = Location(
-        location_id=1,
         location_name="location_name_example",
     ) # Location |  (optional)
 
@@ -1338,6 +1372,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_location: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -1358,7 +1393,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -1376,6 +1413,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -1409,7 +1447,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     note = Note(
-        note_id=1,
         note_title="note_title_example",
         note_content="note_content_example",
         note_version=-2147483648,
@@ -1418,9 +1455,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         tag=[
             1,
         ],
-        note_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         note_created_by_user_id=1,
-        note_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         note_modified_by_user_id=1,
     ) # Note |  (optional)
 
@@ -1432,6 +1467,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_note: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -1452,7 +1488,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -1470,6 +1508,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -1503,7 +1542,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     os = Os(
-        os_id=1,
         os_name="os_name_example",
     ) # Os |  (optional)
 
@@ -1515,6 +1553,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_os: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -1535,7 +1574,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -1553,6 +1594,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -1586,7 +1628,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     osarch = Osarch(
-        osarch_id=1,
         osarch_name="osarch_name_example",
     ) # Osarch |  (optional)
 
@@ -1598,6 +1639,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_osarch: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -1618,7 +1660,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -1636,6 +1680,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -1669,7 +1714,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     reason = Reason(
-        reason_id=1,
         reason_name="reason_name_example",
     ) # Reason |  (optional)
 
@@ -1681,6 +1725,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_reason: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -1701,7 +1746,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -1719,6 +1766,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -1752,7 +1800,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     recommendation = Recommendation(
-        recommendation_id=1,
         recommendation_name="recommendation_name_example",
     ) # Recommendation |  (optional)
 
@@ -1764,6 +1811,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_recommendation: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -1784,7 +1832,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -1802,6 +1852,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -1835,7 +1886,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     reportitem = Reportitem(
-        reportitem_id=1,
         case=1,
         headline=1,
         notestatus=1,
@@ -1845,9 +1895,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         ],
         reportitem_subheadline="reportitem_subheadline_example",
         reportitem_note="reportitem_note_example",
-        reportitem_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         reportitem_created_by_user_id=1,
-        reportitem_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         reportitem_modified_by_user_id=1,
     ) # Reportitem |  (optional)
 
@@ -1859,6 +1907,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_reportitem: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -1879,7 +1928,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -1897,6 +1948,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -1930,7 +1982,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     serviceprovider = Serviceprovider(
-        serviceprovider_id=1,
         serviceprovider_name="serviceprovider_name_example",
     ) # Serviceprovider |  (optional)
 
@@ -1942,6 +1993,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_serviceprovider: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -1962,7 +2014,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -1980,6 +2034,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -2013,8 +2068,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     system = System(
-        system_id=1,
-        system_uuid="system_uuid_example",
         system_name="system_name_example",
         domain=1,
         dnsname=1,
@@ -2044,9 +2097,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         case=[
             1,
         ],
-        system_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         system_created_by_user_id=1,
-        system_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         system_modified_by_user_id=1,
         system_export_markdown=True,
         system_export_spreadsheet=True,
@@ -2060,6 +2111,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_system: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -2080,7 +2132,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -2098,6 +2152,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -2131,7 +2186,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     systemtype = Systemtype(
-        systemtype_id=1,
         systemtype_name="systemtype_name_example",
     ) # Systemtype |  (optional)
 
@@ -2143,6 +2197,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_systemtype: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -2163,7 +2218,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -2181,6 +2238,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -2214,7 +2272,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     systemuser = Systemuser(
-        systemuser_id=1,
         systemuser_name="systemuser_name_example",
         system=1,
         systemuser_lastlogon_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
@@ -2229,6 +2286,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_systemuser: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -2249,7 +2307,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -2267,6 +2327,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -2300,7 +2361,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     tag = Tag(
-        tag_id=1,
         tag_name="tag_name_example",
         tagcolor=1,
     ) # Tag |  (optional)
@@ -2313,6 +2373,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_tag: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -2333,7 +2394,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -2351,6 +2414,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -2384,7 +2448,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     task = Task(
-        task_id=1,
         parent_task=1,
         taskname=1,
         taskpriority=1,
@@ -2400,8 +2463,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         task_started_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         task_finished_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         task_due_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
-        task_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
-        task_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         task_created_by_user_id=1,
         task_modified_by_user_id=1,
     ) # Task |  (optional)
@@ -2414,6 +2475,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_task: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -2434,7 +2496,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -2452,6 +2516,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -2485,7 +2550,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = api_api.ApiApi(api_client)
     taskname = Taskname(
-        taskname_id=1,
         taskname_name="taskname_name_example",
     ) # Taskname |  (optional)
 
@@ -2497,6 +2561,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->create_taskname: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -2517,7 +2582,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** |  |  -  |
@@ -2535,6 +2602,7 @@ all objects, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -2576,6 +2644,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_analysisstatus: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -2592,7 +2661,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -2610,6 +2681,7 @@ all objects, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -2651,6 +2723,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_artifactprioritys: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -2667,7 +2740,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -2685,6 +2760,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -2726,6 +2802,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_artifacts: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -2742,7 +2819,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -2760,6 +2839,7 @@ all objects, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -2801,6 +2881,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_artifactstatus: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -2817,7 +2898,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -2835,6 +2918,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -2876,6 +2960,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_artifacttypes: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -2892,7 +2977,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -2910,6 +2997,7 @@ all objects, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -2951,6 +3039,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_caseprioritys: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -2967,7 +3056,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -2985,6 +3076,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -3026,6 +3118,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_cases: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -3042,7 +3135,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -3060,6 +3155,7 @@ all objects, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -3101,6 +3197,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_casestatus: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -3117,7 +3214,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -3135,6 +3234,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -3176,6 +3276,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_casetypes: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -3192,7 +3293,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -3210,6 +3313,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -3251,6 +3355,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_companys: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -3267,7 +3372,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -3285,6 +3392,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -3326,6 +3434,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_contacts: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -3342,7 +3451,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -3360,6 +3471,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -3401,6 +3513,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_divisions: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -3417,7 +3530,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -3435,6 +3550,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -3476,6 +3592,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_dnsnames: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -3492,7 +3609,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -3510,6 +3629,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -3551,6 +3671,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_domains: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -3567,7 +3688,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -3585,6 +3708,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -3626,6 +3750,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_domainusers: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -3642,7 +3767,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -3660,6 +3787,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -3701,6 +3829,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_headlines: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -3717,7 +3846,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -3735,6 +3866,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -3776,6 +3908,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_ips: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -3792,7 +3925,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -3810,6 +3945,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -3851,6 +3987,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_locations: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -3867,7 +4004,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -3885,6 +4024,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -3926,6 +4066,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_notes: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -3942,7 +4083,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -3960,6 +4103,7 @@ all objects, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -4001,6 +4145,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_notestatus: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4017,7 +4162,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -4035,6 +4182,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -4076,6 +4224,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_os: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4092,7 +4241,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -4110,6 +4261,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -4151,6 +4303,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_osarchs: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4167,7 +4320,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -4185,6 +4340,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -4226,6 +4382,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_reasons: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4242,7 +4399,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -4260,6 +4419,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -4301,6 +4461,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_recommendations: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4317,7 +4478,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -4335,6 +4498,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -4376,6 +4540,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_reportitems: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4392,7 +4557,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -4410,6 +4577,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -4451,6 +4619,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_serviceproviders: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4467,7 +4636,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -4485,6 +4656,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -4526,6 +4698,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_systems: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4542,7 +4715,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -4560,6 +4735,7 @@ all objects, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -4601,6 +4777,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_systemstatus: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4617,7 +4794,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -4635,6 +4814,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -4676,6 +4856,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_systemtypes: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4692,7 +4873,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -4710,6 +4893,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -4751,6 +4935,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_systemusers: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4767,7 +4952,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -4785,6 +4972,7 @@ all objects, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -4826,6 +5014,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_tagcolors: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4842,7 +5031,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -4860,6 +5051,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -4901,6 +5093,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_tags: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4917,7 +5110,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -4935,6 +5130,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -4976,6 +5172,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_tasknames: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -4992,7 +5189,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -5010,6 +5209,7 @@ all objects, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -5051,6 +5251,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_taskprioritys: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -5067,7 +5268,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -5085,6 +5288,7 @@ all objects, allowed: GET + POST
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -5126,6 +5330,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_tasks: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -5142,7 +5347,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -5160,6 +5367,7 @@ all objects, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -5201,6 +5409,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->list_taskstatus: %s\n" % e)
 ```
 
+
 ### Parameters
 This endpoint does not need any parameter.
 
@@ -5217,7 +5426,9 @@ This endpoint does not need any parameter.
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -5235,6 +5446,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -5269,8 +5481,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     artifact_id = "artifact_id_example" # str | A unique integer value identifying this artifact.
     artifact = Artifact(
-        artifact_id=1,
-        artifact_uuid="artifact_uuid_example",
         artifact_name="artifact_name_example",
         artifactpriority=1,
         artifactstatus=1,
@@ -5284,12 +5494,9 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         artifact_sha1="artifact_sha1_example",
         artifact_sha256="artifact_sha256_example",
         artifact_source_path="artifact_source_path_example",
-        artifact_storage_path="artifact_storage_path_example",
         artifact_acquisition_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         artifact_requested_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
-        artifact_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         artifact_created_by_user_id=1,
-        artifact_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         artifact_modified_by_user_id=1,
     ) # Artifact |  (optional)
 
@@ -5308,6 +5515,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_artifact: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -5329,7 +5537,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -5347,6 +5557,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -5381,7 +5592,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     artifacttype_id = "artifacttype_id_example" # str | A unique integer value identifying this artifacttype.
     artifacttype = Artifacttype(
-        artifacttype_id=1,
         artifacttype_name="artifacttype_name_example",
     ) # Artifacttype |  (optional)
 
@@ -5400,6 +5610,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_artifacttype: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -5421,7 +5632,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -5439,6 +5652,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -5473,7 +5687,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     case_id = "case_id_example" # str | A unique integer value identifying this case.
     case = Case(
-        case_id=1,
         case_id_external="case_id_external_example",
         case_name="case_name_example",
         casepriority=1,
@@ -5486,9 +5699,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         case_start_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_end_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_created_by_user_id=1,
-        case_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_modified_by_user_id=1,
-        case_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
     ) # Case |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -5506,6 +5717,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_case: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -5527,7 +5739,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -5545,6 +5759,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -5579,7 +5794,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     casetype_id = "casetype_id_example" # str | A unique integer value identifying this casetype.
     casetype = Casetype(
-        casetype_id=1,
         casetype_name="casetype_name_example",
     ) # Casetype |  (optional)
 
@@ -5598,6 +5812,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_casetype: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -5619,7 +5834,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -5637,6 +5854,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -5671,7 +5889,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     company_id = "company_id_example" # str | A unique integer value identifying this company.
     company = Company(
-        company_id=1,
         company_name="company_name_example",
         division=1,
     ) # Company |  (optional)
@@ -5691,6 +5908,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_company: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -5712,7 +5930,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -5730,6 +5950,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -5764,7 +5985,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     contact_id = "contact_id_example" # str | A unique integer value identifying this contact.
     contact = Contact(
-        contact_id=1,
         contact_name="contact_name_example",
         contact_email="contact_email_example",
         contact_phone="contact_phone_example",
@@ -5786,6 +6006,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->partial_update_contact: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -5806,7 +6027,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -5824,6 +6047,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -5858,7 +6082,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     division_id = "division_id_example" # str | A unique integer value identifying this division.
     division = Division(
-        division_id=1,
         division_name="division_name_example",
     ) # Division |  (optional)
 
@@ -5877,6 +6100,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_division: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -5898,7 +6122,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -5916,6 +6142,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -5950,7 +6177,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     dnsname_id = "dnsname_id_example" # str | A unique integer value identifying this dnsname.
     dnsname = Dnsname(
-        dnsname_id=1,
         dnsname_name="dnsname_name_example",
         domain=1,
     ) # Dnsname |  (optional)
@@ -5970,6 +6196,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_dnsname: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -5991,7 +6218,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -6009,6 +6238,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -6043,7 +6273,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     domain_id = "domain_id_example" # str | A unique integer value identifying this domain.
     domain = Domain(
-        domain_id=1,
         domain_name="domain_name_example",
     ) # Domain |  (optional)
 
@@ -6062,6 +6291,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_domain: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -6083,7 +6313,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -6101,6 +6333,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -6135,7 +6368,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     domainuser_id = "domainuser_id_example" # str | A unique integer value identifying this domainuser.
     domainuser = Domainuser(
-        domainuser_id=1,
         domainuser_name="domainuser_name_example",
         domain=1,
         domainuser_is_domainadmin=True,
@@ -6157,6 +6389,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->partial_update_domainuser: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -6177,7 +6410,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -6195,6 +6430,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -6229,7 +6465,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     headline_id = "headline_id_example" # str | A unique integer value identifying this headline.
     headline = Headline(
-        headline_id=1,
         headline_name="headline_name_example",
     ) # Headline |  (optional)
 
@@ -6248,6 +6483,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_headline: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -6269,7 +6505,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -6287,6 +6525,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -6321,7 +6560,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     ip_id = "ip_id_example" # str | A unique integer value identifying this ip.
     ip = Ip(
-        ip_id=1,
         ip_ip="ip_ip_example",
     ) # Ip |  (optional)
 
@@ -6340,6 +6578,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_ip: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -6361,7 +6600,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -6379,6 +6620,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -6413,7 +6655,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     location_id = "location_id_example" # str | A unique integer value identifying this location.
     location = Location(
-        location_id=1,
         location_name="location_name_example",
     ) # Location |  (optional)
 
@@ -6432,6 +6673,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_location: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -6453,7 +6695,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -6471,6 +6715,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -6505,7 +6750,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     note_id = "note_id_example" # str | A unique integer value identifying this note.
     note = Note(
-        note_id=1,
         note_title="note_title_example",
         note_content="note_content_example",
         note_version=-2147483648,
@@ -6514,9 +6758,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         tag=[
             1,
         ],
-        note_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         note_created_by_user_id=1,
-        note_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         note_modified_by_user_id=1,
     ) # Note |  (optional)
 
@@ -6535,6 +6777,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_note: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -6556,7 +6799,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -6574,6 +6819,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -6608,7 +6854,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     os_id = "os_id_example" # str | A unique integer value identifying this os.
     os = Os(
-        os_id=1,
         os_name="os_name_example",
     ) # Os |  (optional)
 
@@ -6627,6 +6872,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_os: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -6648,7 +6894,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -6666,6 +6914,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -6700,7 +6949,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     osarch_id = "osarch_id_example" # str | A unique integer value identifying this osarch.
     osarch = Osarch(
-        osarch_id=1,
         osarch_name="osarch_name_example",
     ) # Osarch |  (optional)
 
@@ -6719,6 +6967,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_osarch: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -6740,7 +6989,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -6758,6 +7009,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -6792,7 +7044,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     reason_id = "reason_id_example" # str | A unique integer value identifying this reason.
     reason = Reason(
-        reason_id=1,
         reason_name="reason_name_example",
     ) # Reason |  (optional)
 
@@ -6811,6 +7062,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_reason: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -6832,7 +7084,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -6850,6 +7104,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -6884,7 +7139,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     recommendation_id = "recommendation_id_example" # str | A unique integer value identifying this recommendation.
     recommendation = Recommendation(
-        recommendation_id=1,
         recommendation_name="recommendation_name_example",
     ) # Recommendation |  (optional)
 
@@ -6903,6 +7157,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_recommendation: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -6924,7 +7179,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -6942,6 +7199,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -6976,7 +7234,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     reportitem_id = "reportitem_id_example" # str | A unique integer value identifying this reportitem.
     reportitem = Reportitem(
-        reportitem_id=1,
         case=1,
         headline=1,
         notestatus=1,
@@ -6986,9 +7243,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         ],
         reportitem_subheadline="reportitem_subheadline_example",
         reportitem_note="reportitem_note_example",
-        reportitem_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         reportitem_created_by_user_id=1,
-        reportitem_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         reportitem_modified_by_user_id=1,
     ) # Reportitem |  (optional)
 
@@ -7007,6 +7262,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_reportitem: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -7028,7 +7284,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -7046,6 +7304,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -7080,7 +7339,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     serviceprovider_id = "serviceprovider_id_example" # str | A unique integer value identifying this serviceprovider.
     serviceprovider = Serviceprovider(
-        serviceprovider_id=1,
         serviceprovider_name="serviceprovider_name_example",
     ) # Serviceprovider |  (optional)
 
@@ -7099,6 +7357,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_serviceprovider: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -7120,7 +7379,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -7138,6 +7399,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -7172,8 +7434,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     system_id = "system_id_example" # str | A unique integer value identifying this system.
     system = System(
-        system_id=1,
-        system_uuid="system_uuid_example",
         system_name="system_name_example",
         domain=1,
         dnsname=1,
@@ -7203,9 +7463,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         case=[
             1,
         ],
-        system_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         system_created_by_user_id=1,
-        system_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         system_modified_by_user_id=1,
         system_export_markdown=True,
         system_export_spreadsheet=True,
@@ -7227,6 +7485,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->partial_update_system: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -7247,7 +7506,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -7265,6 +7526,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -7299,7 +7561,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     systemtype_id = "systemtype_id_example" # str | A unique integer value identifying this systemtype.
     systemtype = Systemtype(
-        systemtype_id=1,
         systemtype_name="systemtype_name_example",
     ) # Systemtype |  (optional)
 
@@ -7318,6 +7579,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_systemtype: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -7339,7 +7601,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -7357,6 +7621,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -7391,7 +7656,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     systemuser_id = "systemuser_id_example" # str | A unique integer value identifying this systemuser.
     systemuser = Systemuser(
-        systemuser_id=1,
         systemuser_name="systemuser_name_example",
         system=1,
         systemuser_lastlogon_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
@@ -7414,6 +7678,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->partial_update_systemuser: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -7434,7 +7699,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -7452,6 +7719,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -7486,7 +7754,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     tag_id = "tag_id_example" # str | A unique integer value identifying this tag.
     tag = Tag(
-        tag_id=1,
         tag_name="tag_name_example",
         tagcolor=1,
     ) # Tag |  (optional)
@@ -7506,6 +7773,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_tag: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -7527,7 +7795,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -7545,6 +7815,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -7579,7 +7850,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     task_id = "task_id_example" # str | A unique integer value identifying this task.
     task = Task(
-        task_id=1,
         parent_task=1,
         taskname=1,
         taskpriority=1,
@@ -7595,8 +7865,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         task_started_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         task_finished_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         task_due_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
-        task_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
-        task_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         task_created_by_user_id=1,
         task_modified_by_user_id=1,
     ) # Task |  (optional)
@@ -7616,6 +7884,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_task: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -7637,7 +7906,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -7655,6 +7926,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -7689,7 +7961,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     taskname_id = "taskname_id_example" # str | A unique integer value identifying this taskname.
     taskname = Taskname(
-        taskname_id=1,
         taskname_name="taskname_name_example",
     ) # Taskname |  (optional)
 
@@ -7708,6 +7979,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->partial_update_taskname: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -7729,7 +8001,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -7747,6 +8021,7 @@ single object, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -7789,6 +8064,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_analysisstatus: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -7808,7 +8084,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -7826,6 +8104,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -7868,6 +8147,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_artifact: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -7887,7 +8167,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -7905,6 +8187,7 @@ single object, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -7947,6 +8230,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_artifactpriority: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -7966,7 +8250,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -7984,6 +8270,7 @@ single object, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -8026,6 +8313,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_artifactstatus: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8045,7 +8333,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -8063,6 +8353,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -8105,6 +8396,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_artifacttype: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8124,7 +8416,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -8142,6 +8436,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -8184,6 +8479,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_case: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8203,7 +8499,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -8221,6 +8519,7 @@ single object, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -8263,6 +8562,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_casepriority: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8282,7 +8582,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -8300,6 +8602,7 @@ single object, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -8342,6 +8645,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_casestatus: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8361,7 +8665,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -8379,6 +8685,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -8421,6 +8728,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_casetype: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8440,7 +8748,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -8458,6 +8768,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -8500,6 +8811,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_company: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8519,7 +8831,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -8537,6 +8851,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -8579,6 +8894,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_contact: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8598,7 +8914,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -8616,6 +8934,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -8658,6 +8977,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_division: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8677,7 +8997,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -8695,6 +9017,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -8737,6 +9060,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_dnsname: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8756,7 +9080,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -8774,6 +9100,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -8816,6 +9143,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_domain: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8835,7 +9163,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -8853,6 +9183,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -8895,6 +9226,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_domainuser: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8914,7 +9246,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -8932,6 +9266,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -8974,6 +9309,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_headline: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -8993,7 +9329,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -9011,6 +9349,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -9053,6 +9392,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_ip: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9072,7 +9412,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -9090,6 +9432,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -9132,6 +9475,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_location: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9151,7 +9495,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -9169,6 +9515,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -9211,6 +9558,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_note: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9230,7 +9578,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -9248,6 +9598,7 @@ single object, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -9290,6 +9641,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_notestatus: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9309,7 +9661,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -9327,6 +9681,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -9369,6 +9724,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_os: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9388,7 +9744,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -9406,6 +9764,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -9448,6 +9807,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_osarch: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9467,7 +9827,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -9485,6 +9847,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -9527,6 +9890,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_reason: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9546,7 +9910,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -9564,6 +9930,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -9606,6 +9973,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_recommendation: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9625,7 +9993,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -9643,6 +10013,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -9685,6 +10056,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_reportitem: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9704,7 +10076,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -9722,6 +10096,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -9764,6 +10139,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_serviceprovider: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9783,7 +10159,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -9801,6 +10179,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -9843,6 +10222,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_system: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9862,7 +10242,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -9880,6 +10262,7 @@ single object, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -9922,6 +10305,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_systemstatus: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -9941,7 +10325,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -9959,6 +10345,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -10001,6 +10388,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_systemtype: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -10020,7 +10408,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -10038,6 +10428,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -10080,6 +10471,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_systemuser: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -10099,7 +10491,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -10117,6 +10511,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -10159,6 +10554,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_tag: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -10178,7 +10574,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -10196,6 +10594,7 @@ single object, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -10238,6 +10637,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_tagcolor: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -10257,7 +10657,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -10275,6 +10677,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -10317,6 +10720,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_task: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -10336,7 +10740,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -10354,6 +10760,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -10396,6 +10803,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_taskname: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -10415,7 +10823,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -10433,6 +10843,7 @@ single object, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -10475,6 +10886,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_taskpriority: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -10494,7 +10906,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -10512,6 +10926,7 @@ single object, allowed: GET
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -10554,6 +10969,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->retrieve_taskstatus: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -10573,7 +10989,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -10591,6 +11009,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -10625,8 +11044,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     artifact_id = "artifact_id_example" # str | A unique integer value identifying this artifact.
     artifact = Artifact(
-        artifact_id=1,
-        artifact_uuid="artifact_uuid_example",
         artifact_name="artifact_name_example",
         artifactpriority=1,
         artifactstatus=1,
@@ -10640,12 +11057,9 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         artifact_sha1="artifact_sha1_example",
         artifact_sha256="artifact_sha256_example",
         artifact_source_path="artifact_source_path_example",
-        artifact_storage_path="artifact_storage_path_example",
         artifact_acquisition_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         artifact_requested_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
-        artifact_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         artifact_created_by_user_id=1,
-        artifact_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         artifact_modified_by_user_id=1,
     ) # Artifact |  (optional)
 
@@ -10664,6 +11078,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_artifact: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -10685,7 +11100,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -10703,6 +11120,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -10737,7 +11155,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     artifacttype_id = "artifacttype_id_example" # str | A unique integer value identifying this artifacttype.
     artifacttype = Artifacttype(
-        artifacttype_id=1,
         artifacttype_name="artifacttype_name_example",
     ) # Artifacttype |  (optional)
 
@@ -10756,6 +11173,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_artifacttype: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -10777,7 +11195,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -10795,6 +11215,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -10829,7 +11250,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     case_id = "case_id_example" # str | A unique integer value identifying this case.
     case = Case(
-        case_id=1,
         case_id_external="case_id_external_example",
         case_name="case_name_example",
         casepriority=1,
@@ -10842,9 +11262,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         case_start_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_end_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_created_by_user_id=1,
-        case_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_modified_by_user_id=1,
-        case_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
     ) # Case |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -10862,6 +11280,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_case: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -10883,7 +11302,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -10901,6 +11322,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -10935,7 +11357,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     casetype_id = "casetype_id_example" # str | A unique integer value identifying this casetype.
     casetype = Casetype(
-        casetype_id=1,
         casetype_name="casetype_name_example",
     ) # Casetype |  (optional)
 
@@ -10954,6 +11375,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_casetype: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -10975,7 +11397,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -10993,6 +11417,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -11027,7 +11452,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     company_id = "company_id_example" # str | A unique integer value identifying this company.
     company = Company(
-        company_id=1,
         company_name="company_name_example",
         division=1,
     ) # Company |  (optional)
@@ -11047,6 +11471,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_company: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -11068,7 +11493,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -11086,6 +11513,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -11120,7 +11548,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     contact_id = "contact_id_example" # str | A unique integer value identifying this contact.
     contact = Contact(
-        contact_id=1,
         contact_name="contact_name_example",
         contact_email="contact_email_example",
         contact_phone="contact_phone_example",
@@ -11142,6 +11569,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->update_contact: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -11162,7 +11590,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -11180,6 +11610,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -11214,7 +11645,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     division_id = "division_id_example" # str | A unique integer value identifying this division.
     division = Division(
-        division_id=1,
         division_name="division_name_example",
     ) # Division |  (optional)
 
@@ -11233,6 +11663,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_division: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -11254,7 +11685,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -11272,6 +11705,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -11306,7 +11740,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     dnsname_id = "dnsname_id_example" # str | A unique integer value identifying this dnsname.
     dnsname = Dnsname(
-        dnsname_id=1,
         dnsname_name="dnsname_name_example",
         domain=1,
     ) # Dnsname |  (optional)
@@ -11326,6 +11759,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_dnsname: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -11347,7 +11781,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -11365,6 +11801,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -11399,7 +11836,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     domain_id = "domain_id_example" # str | A unique integer value identifying this domain.
     domain = Domain(
-        domain_id=1,
         domain_name="domain_name_example",
     ) # Domain |  (optional)
 
@@ -11418,6 +11854,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_domain: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -11439,7 +11876,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -11457,6 +11896,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -11491,7 +11931,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     domainuser_id = "domainuser_id_example" # str | A unique integer value identifying this domainuser.
     domainuser = Domainuser(
-        domainuser_id=1,
         domainuser_name="domainuser_name_example",
         domain=1,
         domainuser_is_domainadmin=True,
@@ -11513,6 +11952,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->update_domainuser: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -11533,7 +11973,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -11551,6 +11993,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -11585,7 +12028,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     headline_id = "headline_id_example" # str | A unique integer value identifying this headline.
     headline = Headline(
-        headline_id=1,
         headline_name="headline_name_example",
     ) # Headline |  (optional)
 
@@ -11604,6 +12046,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_headline: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -11625,7 +12068,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -11643,6 +12088,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -11677,7 +12123,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     ip_id = "ip_id_example" # str | A unique integer value identifying this ip.
     ip = Ip(
-        ip_id=1,
         ip_ip="ip_ip_example",
     ) # Ip |  (optional)
 
@@ -11696,6 +12141,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_ip: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -11717,7 +12163,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -11735,6 +12183,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -11769,7 +12218,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     location_id = "location_id_example" # str | A unique integer value identifying this location.
     location = Location(
-        location_id=1,
         location_name="location_name_example",
     ) # Location |  (optional)
 
@@ -11788,6 +12236,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_location: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -11809,7 +12258,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -11827,6 +12278,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -11861,7 +12313,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     note_id = "note_id_example" # str | A unique integer value identifying this note.
     note = Note(
-        note_id=1,
         note_title="note_title_example",
         note_content="note_content_example",
         note_version=-2147483648,
@@ -11870,9 +12321,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         tag=[
             1,
         ],
-        note_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         note_created_by_user_id=1,
-        note_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         note_modified_by_user_id=1,
     ) # Note |  (optional)
 
@@ -11891,6 +12340,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_note: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -11912,7 +12362,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -11930,6 +12382,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -11964,7 +12417,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     os_id = "os_id_example" # str | A unique integer value identifying this os.
     os = Os(
-        os_id=1,
         os_name="os_name_example",
     ) # Os |  (optional)
 
@@ -11983,6 +12435,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_os: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -12004,7 +12457,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -12022,6 +12477,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -12056,7 +12512,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     osarch_id = "osarch_id_example" # str | A unique integer value identifying this osarch.
     osarch = Osarch(
-        osarch_id=1,
         osarch_name="osarch_name_example",
     ) # Osarch |  (optional)
 
@@ -12075,6 +12530,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_osarch: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -12096,7 +12552,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -12114,6 +12572,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -12148,7 +12607,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     reason_id = "reason_id_example" # str | A unique integer value identifying this reason.
     reason = Reason(
-        reason_id=1,
         reason_name="reason_name_example",
     ) # Reason |  (optional)
 
@@ -12167,6 +12625,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_reason: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -12188,7 +12647,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -12206,6 +12667,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -12240,7 +12702,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     recommendation_id = "recommendation_id_example" # str | A unique integer value identifying this recommendation.
     recommendation = Recommendation(
-        recommendation_id=1,
         recommendation_name="recommendation_name_example",
     ) # Recommendation |  (optional)
 
@@ -12259,6 +12720,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_recommendation: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -12280,7 +12742,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -12298,6 +12762,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -12332,7 +12797,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     reportitem_id = "reportitem_id_example" # str | A unique integer value identifying this reportitem.
     reportitem = Reportitem(
-        reportitem_id=1,
         case=1,
         headline=1,
         notestatus=1,
@@ -12342,9 +12806,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         ],
         reportitem_subheadline="reportitem_subheadline_example",
         reportitem_note="reportitem_note_example",
-        reportitem_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         reportitem_created_by_user_id=1,
-        reportitem_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         reportitem_modified_by_user_id=1,
     ) # Reportitem |  (optional)
 
@@ -12363,6 +12825,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_reportitem: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -12384,7 +12847,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -12402,6 +12867,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -12436,7 +12902,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     serviceprovider_id = "serviceprovider_id_example" # str | A unique integer value identifying this serviceprovider.
     serviceprovider = Serviceprovider(
-        serviceprovider_id=1,
         serviceprovider_name="serviceprovider_name_example",
     ) # Serviceprovider |  (optional)
 
@@ -12455,6 +12920,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_serviceprovider: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -12476,7 +12942,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -12494,6 +12962,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -12528,8 +12997,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     system_id = "system_id_example" # str | A unique integer value identifying this system.
     system = System(
-        system_id=1,
-        system_uuid="system_uuid_example",
         system_name="system_name_example",
         domain=1,
         dnsname=1,
@@ -12559,9 +13026,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         case=[
             1,
         ],
-        system_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         system_created_by_user_id=1,
-        system_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         system_modified_by_user_id=1,
         system_export_markdown=True,
         system_export_spreadsheet=True,
@@ -12583,6 +13048,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->update_system: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -12603,7 +13069,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -12621,6 +13089,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -12655,7 +13124,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     systemtype_id = "systemtype_id_example" # str | A unique integer value identifying this systemtype.
     systemtype = Systemtype(
-        systemtype_id=1,
         systemtype_name="systemtype_name_example",
     ) # Systemtype |  (optional)
 
@@ -12674,6 +13142,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_systemtype: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -12695,7 +13164,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -12713,6 +13184,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -12747,7 +13219,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     systemuser_id = "systemuser_id_example" # str | A unique integer value identifying this systemuser.
     systemuser = Systemuser(
-        systemuser_id=1,
         systemuser_name="systemuser_name_example",
         system=1,
         systemuser_lastlogon_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
@@ -12770,6 +13241,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         print("Exception when calling ApiApi->update_systemuser: %s\n" % e)
 ```
 
+
 ### Parameters
 
 Name | Type | Description  | Notes
@@ -12790,7 +13262,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -12808,6 +13282,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -12842,7 +13317,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     tag_id = "tag_id_example" # str | A unique integer value identifying this tag.
     tag = Tag(
-        tag_id=1,
         tag_name="tag_name_example",
         tagcolor=1,
     ) # Tag |  (optional)
@@ -12862,6 +13336,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_tag: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -12883,7 +13358,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -12901,6 +13378,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -12935,7 +13413,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     task_id = "task_id_example" # str | A unique integer value identifying this task.
     task = Task(
-        task_id=1,
         parent_task=1,
         taskname=1,
         taskpriority=1,
@@ -12951,8 +13428,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         task_started_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         task_finished_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         task_due_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
-        task_create_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
-        task_modify_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         task_created_by_user_id=1,
         task_modified_by_user_id=1,
     ) # Task |  (optional)
@@ -12972,6 +13447,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_task: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -12993,7 +13469,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
@@ -13011,6 +13489,7 @@ single object, allowed: GET + PUT
 
 * Basic Authentication (basicAuth):
 * Bearer Authentication (bearerAuth):
+
 ```python
 import time
 import dfirtrackapi_client
@@ -13045,7 +13524,6 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     api_instance = api_api.ApiApi(api_client)
     taskname_id = "taskname_id_example" # str | A unique integer value identifying this taskname.
     taskname = Taskname(
-        taskname_id=1,
         taskname_name="taskname_name_example",
     ) # Taskname |  (optional)
 
@@ -13064,6 +13542,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     except dfirtrackapi_client.ApiException as e:
         print("Exception when calling ApiApi->update_taskname: %s\n" % e)
 ```
+
 
 ### Parameters
 
@@ -13085,7 +13564,9 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
+
 ### HTTP response details
+
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** |  |  -  |
