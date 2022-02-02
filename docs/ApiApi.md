@@ -219,6 +219,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         artifact_requested_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         artifact_created_by_user_id=1,
         artifact_modified_by_user_id=1,
+        artifact_assigned_to_user_id=1,
     ) # Artifact |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -496,6 +497,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         case_end_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_created_by_user_id=1,
         case_modified_by_user_id=1,
+        case_assigned_to_user_id=1,
     ) # Case |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -1457,6 +1459,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         ],
         note_created_by_user_id=1,
         note_modified_by_user_id=1,
+        note_assigned_to_user_id=1,
     ) # Note |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -1897,6 +1900,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         reportitem_note="reportitem_note_example",
         reportitem_created_by_user_id=1,
         reportitem_modified_by_user_id=1,
+        reportitem_assigned_to_user_id=1,
     ) # Reportitem |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -2099,6 +2103,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         ],
         system_created_by_user_id=1,
         system_modified_by_user_id=1,
+        system_assigned_to_user_id=1,
         system_export_markdown=True,
         system_export_spreadsheet=True,
     ) # System |  (optional)
@@ -2363,6 +2368,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     tag = Tag(
         tag_name="tag_name_example",
         tagcolor=1,
+        tag_assigned_to_user_id=1,
     ) # Tag |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -5498,6 +5504,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         artifact_requested_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         artifact_created_by_user_id=1,
         artifact_modified_by_user_id=1,
+        artifact_assigned_to_user_id=1,
     ) # Artifact |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -5700,6 +5707,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         case_end_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_created_by_user_id=1,
         case_modified_by_user_id=1,
+        case_assigned_to_user_id=1,
     ) # Case |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -6760,6 +6768,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         ],
         note_created_by_user_id=1,
         note_modified_by_user_id=1,
+        note_assigned_to_user_id=1,
     ) # Note |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -7245,6 +7254,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         reportitem_note="reportitem_note_example",
         reportitem_created_by_user_id=1,
         reportitem_modified_by_user_id=1,
+        reportitem_assigned_to_user_id=1,
     ) # Reportitem |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -7465,6 +7475,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         ],
         system_created_by_user_id=1,
         system_modified_by_user_id=1,
+        system_assigned_to_user_id=1,
         system_export_markdown=True,
         system_export_spreadsheet=True,
     ) # System |  (optional)
@@ -7756,6 +7767,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     tag = Tag(
         tag_name="tag_name_example",
         tagcolor=1,
+        tag_assigned_to_user_id=1,
     ) # Tag |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -11061,6 +11073,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         artifact_requested_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         artifact_created_by_user_id=1,
         artifact_modified_by_user_id=1,
+        artifact_assigned_to_user_id=1,
     ) # Artifact |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -11263,6 +11276,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         case_end_time=dateutil_parser('1970-01-01T00:00:00.00Z'),
         case_created_by_user_id=1,
         case_modified_by_user_id=1,
+        case_assigned_to_user_id=1,
     ) # Case |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -12323,6 +12337,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         ],
         note_created_by_user_id=1,
         note_modified_by_user_id=1,
+        note_assigned_to_user_id=1,
     ) # Note |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -12808,6 +12823,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         reportitem_note="reportitem_note_example",
         reportitem_created_by_user_id=1,
         reportitem_modified_by_user_id=1,
+        reportitem_assigned_to_user_id=1,
     ) # Reportitem |  (optional)
 
     # example passing only required values which don't have defaults set
@@ -13028,6 +13044,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
         ],
         system_created_by_user_id=1,
         system_modified_by_user_id=1,
+        system_assigned_to_user_id=1,
         system_export_markdown=True,
         system_export_spreadsheet=True,
     ) # System |  (optional)
@@ -13319,6 +13336,7 @@ with dfirtrackapi_client.ApiClient(configuration) as api_client:
     tag = Tag(
         tag_name="tag_name_example",
         tagcolor=1,
+        tag_assigned_to_user_id=1,
     ) # Tag |  (optional)
 
     # example passing only required values which don't have defaults set

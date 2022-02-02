@@ -31,6 +31,7 @@ Name | Type | Description | Notes
 **case** | **[int]** |  | [optional] 
 **system_create_time** | **datetime** |  | [optional] [readonly] 
 **system_modify_time** | **datetime** |  | [optional] [readonly] 
+**system_assigned_to_user_id** | **int, none_type** |  | [optional] 
 **system_export_markdown** | **bool** |  | [optional] 
 **system_export_spreadsheet** | **bool** |  | [optional] 
 **any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
